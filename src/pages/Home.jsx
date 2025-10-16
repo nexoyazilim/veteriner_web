@@ -76,7 +76,7 @@ export default function Home() {
             </div>
           </div>
       </section>
-      <section className="py-16 sm:py-24 bg-white dark:bg-background-dark border-y border-border-light dark:border-border-dark">
+      <section className="py-16 sm:py-12 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Meet Our Caring Team</h2>
