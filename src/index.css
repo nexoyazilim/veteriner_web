@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #19e6c4;
+  --color-background-light: #ffffff;
+  --color-background-dark: #ffffff;
+  --color-foreground-light: #000000;
+  --color-foreground-dark: #000000;
+  --color-foreground-muted-light: #4e978b;
+  --color-foreground-muted-dark: #a1c7c1;
+  --color-foreground-subtle-light: #4e978b;
+  --color-foreground-subtle-dark: #a1c7c1;
+  --color-border-light: #e7f3f1;
+  --color-border-dark: #2a3c39;
+  --color-progress-fill: #34d399;
+  --color-progress-bg: #e0e0e0;
+  --radius-default: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+}
+
+.gradient-overlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+}
+
+html, body, #root {
+  height: 100%;
+}
+
