@@ -7,10 +7,11 @@ import { I18nProvider } from './i18n.jsx'
 
 const container = document.getElementById('root')
 const root = createRoot(container)
+const basename = (import.meta.env.BASE_URL || '/').replace(/\/+$/, '')
 root.render(
   <React.StrictMode>
     <I18nProvider initialLocale="tr">
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <App />
       </BrowserRouter>
     </I18nProvider>
