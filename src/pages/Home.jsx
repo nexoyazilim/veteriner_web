@@ -54,7 +54,7 @@ export default function Home() {
       </section>
 
 
-      <section className="py-16 sm:py-24 bg-background-light dark:bg-background-dark">
+      <section className="py-16 sm:py-16 bg-background-light dark:bg-background-dark">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12 ">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Comprehensive Veterinary Services</h2>

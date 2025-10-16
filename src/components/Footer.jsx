@@ -22,6 +22,7 @@ export default function Footer() {
             <nav className="flex flex-col gap-2 text-sm">
               <NavLink to="/" end className="hover:text-primary">Home</NavLink>
               <NavLink to="/services" className="hover:text-primary">Services</NavLink>
+              <NavLink to="/blog" className="hover:text-primary">Blog</NavLink>
               <NavLink to="/about" className="hover:text-primary">About Us</NavLink>
               <NavLink to="/contact" className="hover:text-primary">Contact</NavLink>
             </nav>
