@@ -9,7 +9,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
             <Link to="/" className="block" aria-label="PetCare Clinic Home">
-             <img src="/assets/images/site_logo.png" alt="PetCare Clinic Logo" className="h-40 w-auto" />
+             <img src="/assets/images/site_logo.png" alt="PetCare Clinic Logo" className="h-35 w-auto" />
             </Link>
             <Link to="/" className="text-xl font-bold">PetCare Clinic</Link>
           </div>
@@ -20,9 +20,9 @@ export default function Header() {
             <NavLink to={"/contact"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>Contact</NavLink>
           </nav>
           <div className="flex items-center">
-            <button className="hidden md:flex items-center justify-center rounded-full h-10 px-6 bg-primary text-foreground-dark text-sm font-bold hover:bg-primary/90 transition-colors">
+            <Link to="/contact#booking-form" className="hidden md:flex items-center justify-center rounded-full h-10 px-6 bg-primary text-foreground-dark text-sm font-bold hover:bg-primary/90 transition-colors">
               Book Appointment
-            </button>
+            </Link>
             <button className="md:hidden text-foreground-light dark:text-foreground-dark" onClick={() => setOpen(o => !o)} aria-label="Toggle menu" aria-expanded={open}>
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 6h16M4 12h16m-7 6h7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>

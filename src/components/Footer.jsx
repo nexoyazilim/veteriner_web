@@ -9,8 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-3">
             <Link to="/" className="inline-flex items-center gap-3">
-              <img src="/assets/images/site_logo.png" alt="PetCare Clinic Logo" className="h-10 w-auto" />
-              <span className="text-lg font-bold">PetCare Clinic</span>
+              <img src="/assets/images/site_logo.png" alt="PetCare Clinic Logo" className="block h-[96px] sm:h-[112px] md:h-[128px] w-auto max-h-none shrink-0" />
+              <span className="text-lg sm:text-xl font-bold">PetCare Clinic</span>
             </Link>
             <p className="text-sm text-foreground-muted-light dark:text-foreground-muted-dark">
               Şefkatli ve kapsamlı veteriner bakımı.

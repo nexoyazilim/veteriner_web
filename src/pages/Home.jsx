@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-    import ReservationModal from '../components/ReservationModal.jsx'
-import SuccessModal from '../components/SuccessModal.jsx'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   const heroImages = [
@@ -9,9 +8,7 @@ export default function Home() {
     'https://lh3.googleusercontent.com/aida-public/AB6AXuBz8z2Tyl3Lh9jgPHHE1nuDTG29MeOWDcq5XleTJaCOtd_bbyobsjek9SOgGBJeOmwbZLfpMUr1iFAQilh6IlxXlaqgroO9GQ73903Uw4vE1BrsPFTaqrj1v7I3iCOLY_y4kFHQKTk4CL4cdd5UkX_VSD_XOkSbVx3d-dWhTIxVLmdJCQWPyx-dWCwADy0srOaXfF98owp3ZnY6WV7_FEjtslnTtrbVgU-qyzAjf0J6Pn6KpETBP1elPCBXeF_hu9VxsCQt6JUsp1c'
   ]
   const [heroIndex, setHeroIndex] = useState(0)
-  const [isReservationOpen, setIsReservationOpen] = useState(false)
-  const [isSuccessOpen, setIsSuccessOpen] = useState(false)
-  const [successMessage, setSuccessMessage] = useState('')
+  
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -20,11 +17,7 @@ export default function Home() {
     return () => clearInterval(id)
   }, [])
 
-  const handleReservationSubmit = (data) => {
-    const msg = `Rezervasyonunuz alındı.\nAd: ${data.name}\nTelefon: ${data.phone}\nTarih: ${data.date} ${data.time}\nKişi: ${data.guests}`
-    setSuccessMessage(msg)
-    setIsSuccessOpen(true)
-  }
+  
   return (
     <>
       <section
@@ -48,27 +41,19 @@ export default function Home() {
                 <div className="max-w-3xl">
                   <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-4 text-white">Your Pet's Health is Our Priority</h1>
                   <p className="text-lg md:text-xl font-light mb-8 text-white">Providing compassionate and comprehensive veterinary care for your beloved companions.</p>
-                  <button
+                  <Link
+                    to="/contact#booking-form"
                     className="inline-flex items-center justify-center px-8 py-3 text-base font-bold bg-primary text-background-dark rounded-full hover:bg-primary/90 transition-transform transform hover:scale-105"
-                    onClick={() => setIsReservationOpen(true)}
                   >
                     Book Appointment
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
       </section>
-      <ReservationModal
-        isOpen={isReservationOpen}
-        onClose={() => setIsReservationOpen(false)}
-        onSubmit={handleReservationSubmit}
-      />
-      <SuccessModal
-        isOpen={isSuccessOpen}
-        onClose={() => setIsSuccessOpen(false)}
-        message={successMessage}
-      />
+
+
       <section className="py-16 sm:py-24 bg-background-light dark:bg-background-dark">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12 ">
