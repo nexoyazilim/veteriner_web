@@ -1,10 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const headerRef = useRef(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (open && headerRef.current && !headerRef.current.contains(event.target)) {
+        setOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [open])
   return (
-    <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
+    <header ref={headerRef} className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
@@ -33,7 +47,7 @@ export default function Header() {
         </div>
         {/* Mobile nav */}
         {open && (
-          <div className="md:hidden py-3 border-t border-border-light dark:border-border-dark">
+          <div className="md:hidden py-3 border-t border-border-light dark:border-border-dark text-center">
             <div className="flex flex-col gap-3">
               <NavLink to={"/"} end className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`} onClick={() => setOpen(false)}>Home</NavLink>
               <NavLink to={"/services"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`} onClick={() => setOpen(false)}>Services</NavLink>
