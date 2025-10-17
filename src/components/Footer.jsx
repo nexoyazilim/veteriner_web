@@ -4,7 +4,7 @@ import { NavLink, Link } from 'react-router-dom'
 export default function Footer() {
   const year = new Date().getFullYear()
   return (
-    <footer className="bg-gradient-to-br from-background-light to-background-light/90 dark:from-background-dark dark:to-background-dark/90 border-t-2 border-primary/40 shadow-lg">
+    <footer className="bg-gradient-to-br from-background-light to-background-light/90 dark:from-background-dark dark:to-background-dark/90 border-t-2 border-border-light dark:border-border-dark shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
@@ -106,6 +106,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
+        <div className="pt-8 border-t border-border-light dark:border-border-dark">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-foreground-muted-light dark:text-foreground-muted-dark">
               <p>© {year} PetCare Clinic. All rights reserved.</p>
@@ -124,6 +125,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </div>
 
     </footer>
   )

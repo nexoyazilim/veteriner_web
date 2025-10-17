@@ -12,7 +12,7 @@ export default function Services() {
 
       {/* Section 1 - Wellness Exams */}
       <div className="mt-16 grid gap-8 md:grid-cols-1 lg:grid-cols-1">
-        <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-lg border border-border-light dark:border-border-dark group">
+        <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-xl border-t border-border-light dark:border-border-dark group">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="w-full md:w-1/2 overflow-hidden rounded-xl h-64 md:h-96">
               <div
@@ -49,7 +49,7 @@ export default function Services() {
                   <p className="text-sm text-foreground-subtle-light dark:text-foreground-subtle-dark">Personalized Plan</p>
                 </div>
               </div>
-              <div className="mt-8 p-6 bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-xl">
+              <div className="mt-8 p-6 bg-background-light dark:bg-background-dark rounded-xl">
                 <h4 className="text-xl font-bold mb-4">Frequently Asked Questions:</h4>
                 <div className="space-y-4">
                   <div>
@@ -68,7 +68,7 @@ export default function Services() {
       </div>
 
       {/* Section 2 - Vaccinations */}
-      <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-lg border border-border-light dark:border-border-dark group mt-8">
+      <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-xl border-t border-border-light dark:border-border-dark group mt-8">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2 overflow-hidden rounded-xl h-64 md:h-96">
             <div
@@ -123,7 +123,7 @@ export default function Services() {
       </div>
 
       {/* Section 3 - Dental Care */}
-      <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-lg border border-border-light dark:border-border-dark group mt-8">
+      <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-xl border-t border-border-light dark:border-border-dark group mt-8">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2 overflow-hidden rounded-xl h-64 md:h-96">
             <div
@@ -178,7 +178,7 @@ export default function Services() {
       </div>
 
       {/* Section 4 - Emergency Care */}
-      <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-lg border border-border-light dark:border-border-dark group mt-8">
+      <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-xl border-t border-border-light dark:border-border-dark group mt-8">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2 overflow-hidden rounded-xl h-64 md:h-96">
             <div
@@ -233,7 +233,7 @@ export default function Services() {
       </div>
 
       {/* Section 5 - Nutritional Counseling */}
-      <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-lg border border-border-light dark:border-border-dark group mt-8">
+      <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-xl border-t border-border-light dark:border-border-dark group mt-8">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2 overflow-hidden rounded-xl h-64 md:h-96">
             <div
@@ -288,7 +288,7 @@ export default function Services() {
       </div>
 
       {/* Section 6 - Behavioral Therapy */}
-      <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-lg border border-border-light dark:border-border-dark group mt-8">
+      <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-xl border-t border-border-light dark:border-border-dark group mt-8">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2 overflow-hidden rounded-xl h-64 md:h-96">
             <div
