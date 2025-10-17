@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Home() {
   const heroImages = [
     'https://lh3.googleusercontent.com/aida-public/AB6AXuCm2A0GC7z1oLleOGr0By6RO9P405kh8F168AwTLirL9BRhAGdD5Wi8ip3aImZs4H2G9iH8VJZ3kgIpfWtwf5gvXjOcCbyzv8NA9sXeGZ3asgSSsFtrq1AlzMvlrvh2BGHhO1Xkk81HJek5CjQ9WyNivLi0tmTkcqXply40BhJIFO-OxbtkjVEGYfyu6aWPGsgmFrfsdNVYusK5querb0Jjg9zkFe6wYdJzihQglyPZodOIYPZ5LAhFi9O3zDLxGNFk5aswdXdKSZw',
-    'https://lh3.googleusercontent.com/aida-public/AB6AXuDGJdFjrYwu7jEtzvSbBBrn8KWUw5lUcbGQV_C2KZ3_S0kf7BZtuQWj6C-hlWKeloMcryXT343oLL8tuD05U5fyXvIaTZGUutj9FUJJIYSM1t0aiMk-VONCC5kmhc_qXhP7XGaoKUpvxKv1rBpgwFI6PGn6i2wAk3r8Fur6DXIVWKQIgLXNNhFgoVb3SDR7QHUAWXsX16V-STfa6T2zD_-E9nbEx1iPotUFC9jmOADuQ9MBQIhpc_yQ3KL2IHi6JHl7bQvUhVvUhTE',
+    '/assets/images/main_hero.webp',
     'https://lh3.googleusercontent.com/aida-public/AB6AXuBz8z2Tyl3Lh9jgPHHE1nuDTG29MeOWDcq5XleTJaCOtd_bbyobsjek9SOgGBJeOmwbZLfpMUr1iFAQilh6IlxXlaqgroO9GQ73903Uw4vE1BrsPFTaqrj1v7I3iCOLY_y4kFHQKTk4CL4cdd5UkX_VSD_XOkSbVx3d-dWhTIxVLmdJCQWPyx-dWCwADy0srOaXfF98owp3ZnY6WV7_FEjtslnTtrbVgU-qyzAjf0J6Pn6KpETBP1elPCBXeF_hu9VxsCQt6JUsp1c'
   ]
   const [heroIndex, setHeroIndex] = useState(0)
@@ -54,7 +54,7 @@ export default function Home() {
       </section>
 
 
-      <section className="py-16 sm:py-16 bg-background-light dark:bg-background-dark">
+      <section className="py-8 sm:py-16 bg-background-light dark:bg-background-dark">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12 ">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Comprehensive Veterinary Services</h2>
