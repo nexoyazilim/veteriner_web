@@ -61,21 +61,21 @@ export default function Home() {
               <p className="mt-4 text-lg text-foreground-muted-light dark:text-foreground-muted-dark">From routine check-ups to specialized treatments, we offer a wide range of services to keep your pet healthy and happy.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white dark:bg-background-dark p-6 rounded-lg border border-border-light dark:border-border-dark flex flex-col items-start gap-4">
+              <div className="bg-white dark:bg-background-dark p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow flex flex-col items-start gap-4">
                 <div className="w-full mt-2">
                   <img src="/assets/images/image_1.webp" alt="Preventative Care" className="w-full object-contain rounded-lg" />
                 </div>
                 <h3 className="text-xl font-bold">Preventative Care</h3>
                 <p className="text-foreground-muted-light dark:text-foreground-muted-dark">Regular wellness exams, vaccinations, and parasite prevention to ensure your pet's long-term health.</p>
               </div>
-              <div className="bg-white dark:bg-background-dark p-6 rounded-lg border border-border-light dark:border-border-dark flex flex-col items-start gap-4">
+              <div className="bg-white dark:bg-background-dark p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow flex flex-col items-start gap-4">
                 <div className="w-full mt-2">
                   <img src="/assets/images/image_2.webp" alt="Diagnostics and Treatment" className="w-full object-contain rounded-lg" />
                 </div>
                 <h3 className="text-xl font-bold">Diagnostics &amp; Treatment</h3>
                 <p className="text-foreground-muted-light dark:text-foreground-muted-dark">Advanced diagnostic tools and treatment options for various medical conditions.</p>
               </div>
-              <div className="bg-white dark:bg-background-dark p-6 rounded-lg border border-border-light dark:border-border-dark flex flex-col items-start gap-4">
+              <div className="bg-white dark:bg-background-dark p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow flex flex-col items-start gap-4">
                 <div className="w-full mt-2">
                   <img src="/assets/images/image_3.webp" alt="Surgery and Rehabilitation" className="w-full object-contain rounded-lg" />
                 </div>

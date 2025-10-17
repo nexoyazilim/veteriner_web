@@ -2,6 +2,20 @@ import React from 'react'
 
 export default function Services() {
   return (
+    <>
+    {/* Hero Section (match AboutUs style) */}
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="relative h-[60vh] w-full overflow-hidden rounded-xl">
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url("/assets/images/services_hero.webp")'}}></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <div className="relative flex h-full flex-col justify-end p-8">
+            <h1 className="text-5xl font-black text-white">Our Services</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-24 lg:py-16">
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">Compassionate Care for Your Beloved Pet</h2>
@@ -348,6 +362,7 @@ export default function Services() {
         </button>
       </div>
     </div>
+    </>
   )
 }
 
