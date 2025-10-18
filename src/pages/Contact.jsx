@@ -37,13 +37,12 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-foreground-muted-light dark:text-foreground-muted-dark mb-1" htmlFor="pet-name">{t('contact_pet_name')}</label>
-                <input
-                  className="w-full bg-background-light dark:bg-background-dark border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
-                  id="pet-name"
-                  placeholder={t('contact_pet_name_placeholder')}
-                  type="text"
-                  defaultValue="Fido"
-                />
+                  <input
+                    className="w-full bg-background-light dark:bg-background-dark border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                    id="pet-name"
+                    placeholder={t('contact_pet_name_placeholder')}
+                    type="text"
+                  />
               </div>
               <div>
                 <label className="block text-sm font-medium text-foreground-muted-light dark:text-foreground-muted-dark mb-1" htmlFor="species">{t('contact_species')}</label>

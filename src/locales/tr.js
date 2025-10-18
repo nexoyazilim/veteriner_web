@@ -16,6 +16,11 @@ export default {
   services_title: "Hizmetlerimiz",
   services_comprehensive_title: "Kapsamlı Veteriner Hizmetleri",
   services_comprehensive_subtitle: "Rutin kontrollerden özel tedavilere kadar, evcil hayvanınızın sağlıklı ve mutlu kalması için geniş bir hizmet yelpazesi sunuyoruz.",
+  services_search_placeholder: "Hizmet ara...",
+  services_category_all: "Tümü",
+  services_category_wellness: "Sağlık",
+  services_category_emergency: "Acil",
+  services_category_specialty: "Özel",
   services_faq_title: "Sık Sorulan Sorular:",
   
   // Wellness Exams

@@ -16,6 +16,11 @@ export default {
   services_title: "Our Services",
   services_comprehensive_title: "Comprehensive Veterinary Services",
   services_comprehensive_subtitle: "From routine check-ups to specialized treatments, we offer a wide range of services to keep your pet healthy and happy.",
+  services_search_placeholder: "Search services...",
+  services_category_all: "All",
+  services_category_wellness: "Wellness",
+  services_category_emergency: "Emergency",
+  services_category_specialty: "Specialty",
   services_faq_title: "Frequently Asked Questions:",
   
   // Wellness Exams

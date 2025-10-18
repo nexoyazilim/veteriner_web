@@ -27,6 +27,28 @@ export default function Services() {
         </p>
       </div>
 
+      {/* Search and Category Filter */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-12">
+        <div className="relative w-full max-w-md">
+          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <svg className="w-5 h-5 text-foreground-muted-light dark:text-foreground-muted-dark" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fillRule="evenodd" clipRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"></path>
+            </svg>
+          </div>
+          <input 
+            placeholder={t('services_search_placeholder')} 
+            className="block w-full pl-10 pr-4 py-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground-light dark:text-foreground-dark placeholder-foreground-muted-light dark:placeholder-foreground-muted-dark" 
+            type="search" 
+          />
+        </div>
+        <div className="flex items-center gap-2 flex-wrap justify-center">
+          <button className="px-4 py-2 text-sm font-medium rounded-full bg-primary text-foreground-dark">{t('services_category_all')}</button>
+          <button className="px-4 py-2 text-sm font-medium rounded-full bg-background-light dark:bg-background-dark hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">{t('services_category_wellness')}</button>
+          <button className="px-4 py-2 text-sm font-medium rounded-full bg-background-light dark:bg-background-dark hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">{t('services_category_emergency')}</button>
+          <button className="px-4 py-2 text-sm font-medium rounded-full bg-background-light dark:bg-background-dark hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">{t('services_category_specialty')}</button>
+        </div>
+      </div>
+
       {/* Section 1 - Wellness Exams */}
       <div className="mt-16 grid gap-8 md:grid-cols-1 lg:grid-cols-1">
         <div className="flex flex-col gap-8 p-8 bg-white dark:bg-background-dark/50 rounded-xl shadow-xl border-t border-border-light dark:border-border-dark group">
