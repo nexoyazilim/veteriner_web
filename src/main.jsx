@@ -7,7 +7,7 @@ import { I18nProvider } from './i18n.jsx'
 
 const container = document.getElementById('root')
 const root = createRoot(container)
-const basename = (import.meta.env.BASE_URL || '/').replace(/\/+$/, '')
+const basename = import.meta.env.PROD ? '/veteriner_web' : '/'
 root.render(
   <React.StrictMode>
     <I18nProvider initialLocale="tr">

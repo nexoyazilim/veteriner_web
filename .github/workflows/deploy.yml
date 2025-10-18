@@ -34,6 +34,7 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
+          BASE_URL: /veteriner_web/
 
       - name: Copy public assets
         run: |
@@ -47,7 +48,7 @@ jobs:
           # Klasörleri bütün halinde kopyala (alt dizinleri ve dosya izinleriyle)
           cp -a public/assets/images dist/assets/ 2>/dev/null || true
           cp -a public/assets/i18n dist/assets/ 2>/dev/null || true
-          cp dist/index.html dist/404.html 2>/dev/null || true
+          cp dist/index.html dist/404.html
           cp public/robots.txt dist/robots.txt 2>/dev/null || true
           cp public/sitemap.xml dist/sitemap.xml 2>/dev/null || true
           echo "" > dist/.nojekyll

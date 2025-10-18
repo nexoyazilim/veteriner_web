@@ -16,7 +16,7 @@ export default function Footer() {
             <Link to="/" className="inline-flex flex-col items-center lg:items-start gap-4 mb-6">
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-lg"></div>
-                <img src={logoImage} alt="PetCare Clinic Logo" className="relative h-24 w-24 sm:h-28 sm:w-28 lg:h-32 lg:w-32 object-contain" />
+                <img src={logoImage} alt="PetCare Clinic Logo" className="relative h-24 w-24 sm:h-28 sm:w-28 lg:h-32 lg:w-32 object-contain" loading="lazy" />
               </div>
               <div className="text-center lg:text-left">
                 <h3 className="text-2xl sm:text-3xl font-bold text-foreground-light dark:text-foreground-dark">Veterinet Klinik</h3>
