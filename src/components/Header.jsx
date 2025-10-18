@@ -32,6 +32,7 @@ export default function Header() {
             <NavLink to={"/services"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>Services</NavLink>
             <NavLink to={"/blog"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>Blog</NavLink>
             <NavLink to={"/about"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>About Us</NavLink>
+            <NavLink to={"/gallery"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>Gallery</NavLink>
             <NavLink to={"/contact"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>Contact</NavLink>
           </nav>
           <div className="flex items-center gap-6">
@@ -53,6 +54,7 @@ export default function Header() {
               <NavLink to={"/services"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`} onClick={() => setOpen(false)}>Services</NavLink>
               <NavLink to={"/blog"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`} onClick={() => setOpen(false)}>Blog</NavLink>
               <NavLink to={"/about"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`} onClick={() => setOpen(false)}>About Us</NavLink>
+              <NavLink to={"/gallery"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`} onClick={() => setOpen(false)}>Gallery</NavLink>
               <NavLink to={"/contact"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`} onClick={() => setOpen(false)}>Contact</NavLink>
             </div>
           </div>

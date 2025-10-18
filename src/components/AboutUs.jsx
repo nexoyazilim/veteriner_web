@@ -7,7 +7,7 @@ export default function AboutUs() {
         <div className="flex flex-col gap-12">
           {/* Hero Section */}
           <div className="relative h-[60vh] w-full overflow-hidden rounded-xl">
-            <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url("/assets/images/about_hero.webp")'}}></div>
+            <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url("/assets/images/hero/about_hero.webp")'}}></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             <div className="relative flex h-full flex-col justify-end p-8">
               <h1 className="text-5xl font-black text-white">Our Community-Focused Team</h1>

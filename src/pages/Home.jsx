@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Home() {
   const heroImages = [
     'https://lh3.googleusercontent.com/aida-public/AB6AXuCm2A0GC7z1oLleOGr0By6RO9P405kh8F168AwTLirL9BRhAGdD5Wi8ip3aImZs4H2G9iH8VJZ3kgIpfWtwf5gvXjOcCbyzv8NA9sXeGZ3asgSSsFtrq1AlzMvlrvh2BGHhO1Xkk81HJek5CjQ9WyNivLi0tmTkcqXply40BhJIFO-OxbtkjVEGYfyu6aWPGsgmFrfsdNVYusK5querb0Jjg9zkFe6wYdJzihQglyPZodOIYPZ5LAhFi9O3zDLxGNFk5aswdXdKSZw',
-    '/assets/images/main_hero.webp',
+    '/assets/images/hero/main_hero.webp',
     'https://lh3.googleusercontent.com/aida-public/AB6AXuBz8z2Tyl3Lh9jgPHHE1nuDTG29MeOWDcq5XleTJaCOtd_bbyobsjek9SOgGBJeOmwbZLfpMUr1iFAQilh6IlxXlaqgroO9GQ73903Uw4vE1BrsPFTaqrj1v7I3iCOLY_y4kFHQKTk4CL4cdd5UkX_VSD_XOkSbVx3d-dWhTIxVLmdJCQWPyx-dWCwADy0srOaXfF98owp3ZnY6WV7_FEjtslnTtrbVgU-qyzAjf0J6Pn6KpETBP1elPCBXeF_hu9VxsCQt6JUsp1c'
   ]
   const [heroIndex, setHeroIndex] = useState(0)
