@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n.jsx'
 import mainHeroImage from '/assets/images/hero/main_hero.webp'
+import mainHero2Image from '/assets/images/hero/main_hero_2.webp'
+import mainHero2Image from '/assets/images/hero/main_hero_3.webp'
 import image1 from '/assets/images/image_1.webp'
 import image2 from '/assets/images/image_2.webp'
 import image3 from '/assets/images/image_3.webp'
@@ -9,9 +11,9 @@ import image3 from '/assets/images/image_3.webp'
 export default function Home() {
   const { t } = useI18n()
   const heroImages = [
-    'https://lh3.googleusercontent.com/aida-public/AB6AXuCm2A0GC7z1oLleOGr0By6RO9P405kh8F168AwTLirL9BRhAGdD5Wi8ip3aImZs4H2G9iH8VJZ3kgIpfWtwf5gvXjOcCbyzv8NA9sXeGZ3asgSSsFtrq1AlzMvlrvh2BGHhO1Xkk81HJek5CjQ9WyNivLi0tmTkcqXply40BhJIFO-OxbtkjVEGYfyu6aWPGsgmFrfsdNVYusK5querb0Jjg9zkFe6wYdJzihQglyPZodOIYPZ5LAhFi9O3zDLxGNFk5aswdXdKSZw',
     mainHeroImage,
-    'https://lh3.googleusercontent.com/aida-public/AB6AXuBz8z2Tyl3Lh9jgPHHE1nuDTG29MeOWDcq5XleTJaCOtd_bbyobsjek9SOgGBJeOmwbZLfpMUr1iFAQilh6IlxXlaqgroO9GQ73903Uw4vE1BrsPFTaqrj1v7I3iCOLY_y4kFHQKTk4CL4cdd5UkX_VSD_XOkSbVx3d-dWhTIxVLmdJCQWPyx-dWCwADy0srOaXfF98owp3ZnY6WV7_FEjtslnTtrbVgU-qyzAjf0J6Pn6KpETBP1elPCBXeF_hu9VxsCQt6JUsp1c'
+    mainHero2Image,
+    mainHero3Image,
   ]
   const [heroIndex, setHeroIndex] = useState(0)
   
@@ -69,21 +71,21 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white dark:bg-background-dark p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow flex flex-col items-start gap-4">
                 <div className="w-full mt-2">
-                  <img src={image1} alt={t('service_preventative_title')} className="w-full object-contain rounded-lg" />
+                  <img src={image1} alt={t('service_preventative_title')} className="w-full object-contain rounded-lg" loading="lazy" />
                 </div>
                 <h3 className="text-xl font-bold">{t('service_preventative_title')}</h3>
                 <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('service_preventative_desc')}</p>
               </div>
               <div className="bg-white dark:bg-background-dark p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow flex flex-col items-start gap-4">
                 <div className="w-full mt-2">
-                  <img src={image2} alt={t('service_diagnostics_title')} className="w-full object-contain rounded-lg" />
+                  <img src={image2} alt={t('service_diagnostics_title')} className="w-full object-contain rounded-lg" loading="lazy" />
                 </div>
                 <h3 className="text-xl font-bold">{t('service_diagnostics_title')}</h3>
                 <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('service_diagnostics_desc')}</p>
               </div>
               <div className="bg-white dark:bg-background-dark p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow flex flex-col items-start gap-4">
                 <div className="w-full mt-2">
-                  <img src={image3} alt={t('service_surgery_title')} className="w-full object-contain rounded-lg" />
+                  <img src={image3} alt={t('service_surgery_title')} className="w-full object-contain rounded-lg" loading="lazy" />
                 </div>
                 <h3 className="text-xl font-bold">{t('service_surgery_title')}</h3>
                 <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('service_surgery_desc')}</p>
@@ -100,21 +102,21 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-4">
-                  <img alt={t('team_emily_name')} className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1qqTw3Jqo1x1S14jyncBWLs6KE2i2aK43ZCwMJleWW_YwweRLKi-BJ8hbqBIOhxLNy3Q4AxB3Z0dEouADIo2dVGYpj3b6ucVCZBOT3cqdrGpZEqH-yyscrxTW4jUYJIEZlhbP2FcBplqTv7Hz8ha1BlMi_85V0Sb-MyRY7PNVS9Jc2ZeTQIRtCTZbsPxK6000P3ud_ffRlxzvRlbuRGDCfF_gq18c_yHJhZ0hr9iIsucELLVS2mlvUI-BEf484htEraNLqv73Ejc" />
+                  <img alt={t('team_emily_name')} className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1qqTw3Jqo1x1S14jyncBWLs6KE2i2aK43ZCwMJleWW_YwweRLKi-BJ8hbqBIOhxLNy3Q4AxB3Z0dEouADIo2dVGYpj3b6ucVCZBOT3cqdrGpZEqH-yyscrxTW4jUYJIEZlhbP2FcBplqTv7Hz8ha1BlMi_85V0Sb-MyRY7PNVS9Jc2ZeTQIRtCTZbsPxK6000P3ud_ffRlxzvRlbuRGDCfF_gq18c_yHJhZ0hr9iIsucELLVS2mlvUI-BEf484htEraNLqv73Ejc" loading="lazy" />
                 </div>
                 <h3 className="text-xl font-bold">{t('team_emily_name')}</h3>
                 <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('team_emily_desc')}</p>
               </div>
               <div className="text-center">
                 <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-4">
-                  <img alt={t('team_david_name')} className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuVl_NGWJ2fFXLXtfoQm_eTcLcy4Urh4AfJ0UMxfYW4EFpmSSgCbRbTDlVdI6PgOyhrEZpS2eFBi-otVERAa9WMu4D3u0vzs36EH_49fypwKQipvcAjNt1sBSZDQQNdedcRnVALR71Fw8V6N9wKi5RlsDcZwrHt_ErbRniGzapDjU-wcEauHec39ApR4Fh3e5j4afCDnbvEDgLWaHoxkHM4o-OGTOge1uTSSL74ketxiukzhT710sMkhjlavrb2pB1sCtvfTgUoV0" />
+                  <img alt={t('team_david_name')} className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuVl_NGWJ2fFXLXtfoQm_eTcLcy4Urh4AfJ0UMxfYW4EFpmSSgCbRbTDlVdI6PgOyhrEZpS2eFBi-otVERAa9WMu4D3u0vzs36EH_49fypwKQipvcAjNt1sBSZDQQNdedcRnVALR71Fw8V6N9wKi5RlsDcZwrHt_ErbRniGzapDjU-wcEauHec39ApR4Fh3e5j4afCDnbvEDgLWaHoxkHM4o-OGTOge1uTSSL74ketxiukzhT710sMkhjlavrb2pB1sCtvfTgUoV0" loading="lazy" />
                 </div>
                 <h3 className="text-xl font-bold">{t('team_david_name')}</h3>
                 <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('team_david_desc')}</p>
               </div>
               <div className="text-center">
                 <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-4">
-                  <img alt={t('team_sarah_name')} className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXeZPs6uw4fu3chxND4l6Qcu0t0Il4rdJYPtvQkXD7Zb4wouprnlRRpgY9N-V5jT1ntmIudiSFP74c2u-WRtwdRliWEdMpdKKLkg8d8F910g3pCWFSdHXAZr2b1SjDtcXtXveaRPvRq1d-N05XoBn7a8DFOQBEI6cDpwFaxVKmhMaEHGMH8wQ26lvKnfUmXnGSC6KcJguGGtaH42EWGsJoKIL3HhpPG4YH-NHCpBjWe6316d9cgXk7t8RWKUTDbbrSUMkR9A1KHaU" />
+                  <img alt={t('team_sarah_name')} className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXeZPs6uw4fu3chxND4l6Qcu0t0Il4rdJYPtvQkXD7Zb4wouprnlRRpgY9N-V5jT1ntmIudiSFP74c2u-WRtwdRliWEdMpdKKLkg8d8F910g3pCWFSdHXAZr2b1SjDtcXtXveaRPvRq1d-N05XoBn7a8DFOQBEI6cDpwFaxVKmhMaEHGMH8wQ26lvKnfUmXnGSC6KcJguGGtaH42EWGsJoKIL3HhpPG4YH-NHCpBjWe6316d9cgXk7t8RWKUTDbbrSUMkR9A1KHaU" loading="lazy" />
                 </div>
                 <h3 className="text-xl font-bold">{t('team_sarah_name')}</h3>
                 <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('team_sarah_desc')}</p>

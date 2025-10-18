@@ -51,7 +51,6 @@ export default function Contact() {
                   id="species"
                   placeholder={t('contact_species_placeholder')}
                   type="text"
-                  defaultValue="Dog"
                 />
               </div>
             </div>
@@ -63,7 +62,6 @@ export default function Contact() {
                 id="breed"
                 placeholder={t('contact_breed_placeholder')}
                 type="text"
-                defaultValue="Golden Retriever"
               />
             </div>
 
@@ -77,7 +75,6 @@ export default function Contact() {
                     id="owner-name"
                     placeholder={t('contact_owner_name_placeholder')}
                     type="text"
-                    defaultValue="Jane Doe"
                   />
                 </div>
                 <div>
@@ -87,7 +84,6 @@ export default function Contact() {
                     id="email"
                     placeholder={t('contact_email_placeholder')}
                     type="email"
-                    defaultValue="jane.doe@example.com"
                   />
                 </div>
               </div>
@@ -98,7 +94,6 @@ export default function Contact() {
                   id="phone"
                   placeholder={t('contact_phone_placeholder')}
                   type="tel"
-                  defaultValue="(555) 123-4567"
                 />
               </div>
             </div>
@@ -110,7 +105,7 @@ export default function Contact() {
                 <select
                   className="w-full bg-background-light dark:bg-background-dark border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                   id="service"
-                  defaultValue="Routine Check-up"
+                  defaultValue=""
                 >
                   <option value="">{t('contact_select_service')}</option>
                   <option value="Routine Check-up">{t('contact_routine_checkup')}</option>

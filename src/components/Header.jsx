@@ -26,7 +26,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-2 lg:gap-3 lg:ml-2">
             <Link to="/" className="block" aria-label="PetCare Clinic Home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-             <img src={logoImage} alt="PetCare Clinic Logo" className="h-10 sm:h-12 lg:h-14 w-auto" />
+             <img src={logoImage} alt="PetCare Clinic Logo" className="h-10 sm:h-12 lg:h-14 w-auto" loading="eager" />
             </Link>
             <Link to="/" className="text-base sm:text-lg lg:text-xl font-bold" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Veteriner Klinik</Link>
           </div>

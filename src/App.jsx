@@ -8,6 +8,7 @@ import Blog from './pages/Blog.jsx'
 import Gallery from './pages/Gallery.jsx'
 import AboutUs from './components/AboutUs.jsx'
 import Contact from './pages/Contact.jsx'
+import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
   const location = useLocation()
@@ -27,7 +28,7 @@ export default function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

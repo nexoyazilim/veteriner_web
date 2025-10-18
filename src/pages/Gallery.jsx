@@ -43,7 +43,7 @@ export default function Gallery() {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
         {images.map((src, idx) => (
           <button key={src} className="group relative aspect-square overflow-hidden rounded-lg bg-background-light dark:bg-background-dark shadow hover:shadow-lg transition-shadow" onClick={() => setActive(idx)}>
-            <img src={src} alt={`Gallery ${idx + 1}`} className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform" />
+            <img src={src} alt={`Gallery ${idx + 1}`} className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform" loading="lazy" />
           </button>
         ))}
       </div>
@@ -53,7 +53,7 @@ export default function Gallery() {
           <div className="relative max-w-5xl w-full" onClick={(e) => e.stopPropagation()}>
             <button className="absolute -top-3 -right-3 h-10 w-10 rounded-full bg-white text-black font-bold shadow" onClick={() => setActive(null)} aria-label="Close">×</button>
             <div className="relative w-full max-h-[80vh] overflow-auto rounded-lg bg-background-light dark:bg-background-dark p-2">
-              <img src={images[active]} alt="Preview" className="mx-auto max-h-[76vh] w-auto object-contain" />
+              <img src={images[active]} alt="Preview" className="mx-auto max-h-[76vh] w-auto object-contain" loading="eager" />
             </div>
           </div>
         </div>
