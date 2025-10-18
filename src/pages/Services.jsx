@@ -22,7 +22,7 @@ export default function Services() {
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-24 lg:py-16">
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">{t('services_comprehensive_title')}</h2>
-        <p className="mt-4 text-lg text-foreground-subtle-light dark:text-foreground-subtle-dark">
+        <p className="mt-4 mb-8 text-lg text-foreground-subtle-light dark:text-foreground-subtle-dark">
           {t('services_comprehensive_subtitle')}
         </p>
       </div>

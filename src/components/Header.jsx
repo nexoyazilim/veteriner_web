@@ -24,13 +24,13 @@ export default function Header() {
     <header ref={headerRef} className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-2 md:gap-3 md:ml-2">
+          <div className="flex items-center gap-2 lg:gap-3 lg:ml-2">
             <Link to="/" className="block" aria-label="PetCare Clinic Home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-             <img src={logoImage} alt="PetCare Clinic Logo" className="h-12 sm:h-14 md:h-16 w-auto" />
+             <img src={logoImage} alt="PetCare Clinic Logo" className="h-10 sm:h-12 lg:h-14 w-auto" />
             </Link>
-            <Link to="/" className="text-lg sm:text-xl font-bold" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Veteriner Klinik</Link>
+            <Link to="/" className="text-base sm:text-lg lg:text-xl font-bold" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Veteriner Klinik</Link>
           </div>
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
             <NavLink to={"/"} end className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>{t('nav_home')}</NavLink>
             <NavLink to={"/services"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>{t('nav_services')}</NavLink>
             <NavLink to={"/blog"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>{t('nav_blog')}</NavLink>
@@ -38,26 +38,26 @@ export default function Header() {
             <NavLink to={"/about"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>{t('nav_about')}</NavLink>
             <NavLink to={"/contact"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`}>{t('nav_contact')}</NavLink>
           </nav>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 lg:gap-4">
             {/* Language Switcher */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1 lg:gap-2">
               <button 
                 onClick={() => setLocale('tr')} 
-                className={`px-2 py-1 text-xs font-medium rounded transition-colors ${locale === 'tr' ? 'bg-primary text-foreground-dark' : 'text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary'}`}
+                className={`px-1.5 lg:px-2 py-1 text-xs font-medium rounded transition-colors ${locale === 'tr' ? 'bg-primary text-foreground-dark' : 'text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary'}`}
               >
                 TR
               </button>
               <button 
                 onClick={() => setLocale('en')} 
-                className={`px-2 py-1 text-xs font-medium rounded transition-colors ${locale === 'en' ? 'bg-primary text-foreground-dark' : 'text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary'}`}
+                className={`px-1.5 lg:px-2 py-1 text-xs font-medium rounded transition-colors ${locale === 'en' ? 'bg-primary text-foreground-dark' : 'text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary'}`}
               >
                 EN
               </button>
             </div>
-            <Link to="/contact#booking-form" className="hidden md:flex items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-sm font-semibold hover:bg-primary/90 transition-colors">
+            <Link to="/contact#booking-form" className="hidden lg:flex items-center justify-center rounded-full h-8 lg:h-10 px-4 lg:px-6 bg-primary text-white text-xs lg:text-sm font-semibold hover:bg-primary/90 transition-colors">
               {t('book_appointment')}
             </Link>
-            <button className="md:hidden text-foreground-light dark:text-foreground-dark" onClick={() => setOpen(o => !o)} aria-label="Toggle menu" aria-expanded={open}>
+            <button className="lg:hidden text-foreground-light dark:text-foreground-dark" onClick={() => setOpen(o => !o)} aria-label="Toggle menu" aria-expanded={open}>
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 6h16M4 12h16m-7 6h7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
               </svg>
@@ -66,7 +66,7 @@ export default function Header() {
         </div>
         {/* Mobile nav */}
         {open && (
-          <div className="md:hidden py-3 border-t border-border-light dark:border-border-dark text-center">
+          <div className="lg:hidden py-3 border-t border-border-light dark:border-border-dark text-center">
             <div className="flex flex-col gap-3">
               <NavLink to={"/"} end className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`} onClick={() => setOpen(false)}>{t('nav_home')}</NavLink>
               <NavLink to={"/services"} className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'hover:text-primary'}`} onClick={() => setOpen(false)}>{t('nav_services')}</NavLink>

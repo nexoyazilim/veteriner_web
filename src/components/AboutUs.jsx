@@ -20,26 +20,34 @@ export default function AboutUs() {
           {/* Meet Our Vets Section */}
           <section>
             <h2 className="mb-6 text-3xl font-bold text-foreground-light dark:text-foreground-dark text-center">{t('about_meet_vets')}</h2>
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="flex flex-col items-center text-center">
-                <img alt="Dr. Amelia Harper" className="mb-4 size-40 rounded-full object-cover ring-4 ring-primary/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnPSyrfx9ApXo1mvHh1n0GUeCWGh4d4Yb1UvXNajxemM3k1xqxmSBZZC6Hvjie5rBZmsO_KygrYhSFWwvJHnlfxwz_v2a5i2oYfp8WXmg0gEMuvO6V09rDvrQYBPvdlMgQEpFxW6kSzoSRd8aiL7bN6xkVL4JdCglncuTThfJgVfgm3kOs3p5cYf5UCkUpSnG2EDR-JQgvPbetmEgoYPZL1CKVqRta9m-7-5XipLtTdrjWQH6K0-goRQMSes44Rtq128nsXfpA5-8"/>
-                <h3 className="text-lg font-bold text-foreground-light dark:text-foreground-dark">{t('about_vet1_name')}</h3>
-                <p className="text-sm text-foreground-muted-light dark:text-foreground-muted-dark">{t('about_vet1_desc')}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-white dark:bg-background-dark/50 rounded-xl shadow-xl hover:shadow-2xl transition-shadow p-6 text-center">
+                <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-4">
+                  <img alt="Dr. Amelia Harper" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnPSyrfx9ApXo1mvHh1n0GUeCWGh4d4Yb1UvXNajxemM3k1xqxmSBZZC6Hvjie5rBZmsO_KygrYhSFWwvJHnlfxwz_v2a5i2oYfp8WXmg0gEMuvO6V09rDvrQYBPvdlMgQEpFxW6kSzoSRd8aiL7bN6xkVL4JdCglncuTThfJgVfgm3kOs3p5cYf5UCkUpSnG2EDR-JQgvPbetmEgoYPZL1CKVqRta9m-7-5XipLtTdrjWQH6K0-goRQMSes44Rtq128nsXfpA5-8"/>
+                </div>
+                <h3 className="text-xl font-bold text-foreground-light dark:text-foreground-dark mb-2">{t('about_vet1_name')}</h3>
+                <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('about_vet1_desc')}</p>
+              </div>
+              <div className="bg-white dark:bg-background-dark/50 rounded-xl shadow-xl hover:shadow-2xl transition-shadow p-6 text-center">
+                <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-4">
+                  <img alt="Dr. Ethan Carter" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNcwMTLwVRbWLYO_7Tym9gyzwEZtjBPtjcVCBk5CZck2LgRxgEDrMM0mND6DQTbO0bzuertM-qi6o9jWH9I6ugNLuLjV3tglGiak0BqKJv4gwtEUU5R7g9ZdYreCIf4ABWhO1mtQ3lO9xj5NP2rW6SqMEPNafWPo8iFumu1KwDd3y-e1yZ85pa4svBgmEEgZsCUt7CnmRl8Lq-urjDXAHbC3DVvE7mkc8GZz9X3iO1QmVPkQMWwYuIVeVd0To6jKYNuBC40q4tBR0"/>
+                </div>
+                <h3 className="text-xl font-bold text-foreground-light dark:text-foreground-dark mb-2">{t('about_vet2_name')}</h3>
+                <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('about_vet2_desc')}</p>
+              </div>
+              <div className="bg-white dark:bg-background-dark/50 rounded-xl shadow-xl hover:shadow-2xl transition-shadow p-6 text-center">
+                <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-4">
+                  <img alt="Dr. Olivia Bennett" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxoIQ6PF56WVwFf_8RGnIg6P4ofsem2f02d2OH3ZeeeSa40SnQnyhhbEDDcy7a3KWt7Srr-u-OKYIF1hZIut6dbZpZmqLPMQoalS2RuPF27Hm1W3cCxD1w9IVoUJiwHk4czv7u6dXstkTk-EZJJR4Uz8Z0GcfKW84KW5OUXSib9Xo3rRbItKX0e3HsmrEOq0XKnTptd2ty2t-18qoTwNV4cLOuGvOFjDlJTgEkVDQz6bZvLxKWa8W-xhQHuAHY9Lj0eb6a5IC67T0"/>
 </div>
-              <div className="flex flex-col items-center text-center">
-                <img alt="Dr. Ethan Carter" className="mb-4 size-40 rounded-full object-cover ring-4 ring-primary/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNcwMTLwVRbWLYO_7Tym9gyzwEZtjBPtjcVCBk5CZck2LgRxgEDrMM0mND6DQTbO0bzuertM-qi6o9jWH9I6ugNLuLjV3tglGiak0BqKJv4gwtEUU5R7g9ZdYreCIf4ABWhO1mtQ3lO9xj5NP2rW6SqMEPNafWPo8iFumu1KwDd3y-e1yZ85pa4svBgmEEgZsCUt7CnmRl8Lq-urjDXAHbC3DVvE7mkc8GZz9X3iO1QmVPkQMWwYuIVeVd0To6jKYNuBC40q4tBR0"/>
-                <h3 className="text-lg font-bold text-foreground-light dark:text-foreground-dark">{t('about_vet2_name')}</h3>
-                <p className="text-sm text-foreground-muted-light dark:text-foreground-muted-dark">{t('about_vet2_desc')}</p>
+                <h3 className="text-xl font-bold text-foreground-light dark:text-foreground-dark mb-2">{t('about_vet3_name')}</h3>
+                <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('about_vet3_desc')}</p>
 </div>
-              <div className="flex flex-col items-center text-center">
-                <img alt="Dr. Olivia Bennett" className="mb-4 size-40 rounded-full object-cover ring-4 ring-primary/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxoIQ6PF56WVwFf_8RGnIg6P4ofsem2f02d2OH3ZeeeSa40SnQnyhhbEDDcy7a3KWt7Srr-u-OKYIF1hZIut6dbZpZmqLPMQoalS2RuPF27Hm1W3cCxD1w9IVoUJiwHk4czv7u6dXstkTk-EZJJR4Uz8Z0GcfKW84KW5OUXSib9Xo3rRbItKX0e3HsmrEOq0XKnTptd2ty2t-18qoTwNV4cLOuGvOFjDlJTgEkVDQz6bZvLxKWa8W-xhQHuAHY9Lj0eb6a5IC67T0"/>
-                <h3 className="text-lg font-bold text-foreground-light dark:text-foreground-dark">{t('about_vet3_name')}</h3>
-                <p className="text-sm text-foreground-muted-light dark:text-foreground-muted-dark">{t('about_vet3_desc')}</p>
+              <div className="bg-white dark:bg-background-dark/50 rounded-xl shadow-xl hover:shadow-2xl transition-shadow p-6 text-center">
+                <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-4">
+                  <img alt="Dr. Noah Thompson" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqyyNGyyQdBRnX6KGRKxxR1NfC2Bwbs_8KxR6VNRLOrOxjQU8xyZE1i-gsQm_vxA8c1UDktyRpTLFgqFz5cJ1w3LrSjCpVLoMTcF2PeZbm3gQ38brgnTwtXzJUPtlphTy70cxRGgQa0JH7EXa-xX9RiUlp44pkSaBsveqFuB2nqbSNzVbNPqyR5xG0aZnm-SW9KxPi5NLyWSxYxA1qaTsQUh87_ZrUj-ew3O_fxPQlCANgZUcqal84H03zQRcw7LK_WQMDt3Dymjk"/>
 </div>
-              <div className="flex flex-col items-center text-center">
-                <img alt="Dr. Noah Thompson" className="mb-4 size-40 rounded-full object-cover ring-4 ring-primary/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqyyNGyyQdBRnX6KGRKxxR1NfC2Bwbs_8KxR6VNRLOrOxjQU8xyZE1i-gsQm_vxA8c1UDktyRpTLFgqFz5cJ1w3LrSjCpVLoMTcF2PeZbm3gQ38brgnTwtXzJUPtlphTy70cxRGgQa0JH7EXa-xX9RiUlp44pkSaBsveqFuB2nqbSNzVbNPqyR5xG0aZnm-SW9KxPi5NLyWSxYxA1qaTsQUh87_ZrUj-ew3O_fxPQlCANgZUcqal84H03zQRcw7LK_WQMDt3Dymjk"/>
-                <h3 className="text-lg font-bold text-foreground-light dark:text-foreground-dark">{t('about_vet4_name')}</h3>
-                <p className="text-sm text-foreground-muted-light dark:text-foreground-muted-dark">{t('about_vet4_desc')}</p>
+                <h3 className="text-xl font-bold text-foreground-light dark:text-foreground-dark mb-2">{t('about_vet4_name')}</h3>
+                <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('about_vet4_desc')}</p>
 </div>
 </div>
           </section>
