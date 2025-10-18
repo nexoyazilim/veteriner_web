@@ -1,17 +1,27 @@
 import React, { useState, useEffect } from 'react'
+import { useI18n } from '../i18n.jsx'
+import image1 from '/assets/images/image_1.webp'
+import image2 from '/assets/images/image_2.webp'
+import image3 from '/assets/images/image_3.webp'
+import image4 from '/assets/images/image_4.webp'
+import aboutHero from '/assets/images/hero/about_hero.webp'
+import servicesHero from '/assets/images/hero/services_hero.webp'
+import mainHero from '/assets/images/hero/main_hero.webp'
+import blogHero from '/assets/images/hero/blog_hero.webp'
 
 const images = [
-  '/assets/images/image_1.webp',
-  '/assets/images/image_2.webp',
-  '/assets/images/image_3.webp',
-  '/assets/images/image_4.webp',
-  '/assets/images/hero/about_hero.webp',
-  '/assets/images/hero/services_hero.webp',
-  '/assets/images/hero/main_hero.webp',
-  '/assets/images/hero/blog_hero.webp',
+  image1,
+  image2,
+  image3,
+  image4,
+  aboutHero,
+  servicesHero,
+  mainHero,
+  blogHero,
 ]
 
 export default function Gallery() {
+  const { t } = useI18n()
   const [active, setActive] = useState(null)
 
   useEffect(() => {
@@ -26,8 +36,8 @@ export default function Gallery() {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Photo Gallery</h1>
-        <p className="mt-4 text-lg text-foreground-muted-light dark:text-foreground-muted-dark">Highlights from our clinic, happy patients, and community moments.</p>
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{t('gallery_title')}</h1>
+        <p className="mt-4 text-lg text-foreground-muted-light dark:text-foreground-muted-dark">{t('gallery_subtitle')}</p>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">

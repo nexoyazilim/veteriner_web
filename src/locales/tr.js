@@ -1,11 +1,291 @@
 export default {
+  // Hero Section
   hero_title: "Evcil Dostlarınız Bizim Önceliğimiz",
   hero_subtitle: "Sevdikleriniz için şefkatli ve kapsamlı veteriner bakımını sunuyoruz.",
   book_appointment: "Randevu Al",
+  
+  // Navigation
   nav_home: "Anasayfa",
   nav_services: "Hizmetler",
+  nav_blog: "Blog",
+  nav_gallery: "Galeri",
   nav_about: "Hakkımızda",
   nav_contact: "İletişim",
+  
+  // Services
+  services_title: "Hizmetlerimiz",
+  services_comprehensive_title: "Kapsamlı Veteriner Hizmetleri",
+  services_comprehensive_subtitle: "Rutin kontrollerden özel tedavilere kadar, evcil hayvanınızın sağlıklı ve mutlu kalması için geniş bir hizmet yelpazesi sunuyoruz.",
+  services_faq_title: "Sık Sorulan Sorular:",
+  
+  // Wellness Exams
+  services_wellness_title: "Sağlık Muayeneleri: Mutlu ve Sağlıklı Bir Yaşam Sağlama",
+  services_wellness_desc: "Düzenli kontroller, evcil hayvanınızın uzun vadeli refahı için anahtardır. Kapsamlı sağlık muayenelerimiz, proaktif sağlık yönetimi, erken hastalık tespiti ve evcil hayvanınızın benzersiz ihtiyaçlarına göre özelleştirilmiş kişisel bakım planlarına odaklanır.",
+  services_wellness_expect_title: "Sağlık Muayenesinde Neler Beklenir:",
+  services_wellness_scheduling: "Randevu",
+  services_wellness_comprehensive: "Kapsamlı Kontrol",
+  services_wellness_assessment: "Sağlık Değerlendirmesi",
+  services_wellness_plan: "Kişisel Plan",
+  services_wellness_faq1_q: "Evcil hayvanım ne sıklıkla sağlık muayenesi olmalı?",
+  services_wellness_faq1_a: "Çoğu yetişkin evcil hayvan için yıllık sağlık muayenesi önerilir. Yavru köpekler, kediler ve yaşlı evcil hayvanlar daha sık ziyaret gerektirebilir.",
+  services_wellness_faq2_q: "Randevuya ne getirmeliyim?",
+  services_wellness_faq2_a: "Lütfen ilgili tıbbi kayıtları, ilaç listesini getirin ve evcil hayvanınızın diyeti ve davranışı hakkında konuşmaya hazır olun.",
+  
+  // Vaccinations
+  services_vaccination_title: "Aşılar: Birlikte Güçlü Bağışıklık Oluşturma",
+  services_vaccination_desc: "Aşılar, evcil hayvanınızı ciddi, önlenebilir hastalıklardan korumak için hayati önem taşır. Evcil hayvanınızın yaşam tarzını ve risk faktörlerini değerlendirerek, optimal koruma ve huzur sağlayan özelleştirilmiş bir aşı programı oluşturuyoruz.",
+  services_vaccination_journey_title: "Evcil Hayvanınızın Aşı Yolculuğunu Anlama:",
+  services_vaccination_risk: "Risk Değerlendirmesi",
+  services_vaccination_plan: "Özelleştirilmiş Plan",
+  services_vaccination_administered: "Aşı Uygulandı",
+  services_vaccination_reminder: "Güçlendirici Hatırlatması",
+  services_vaccination_faq1_q: "Aşılar tüm evcil hayvanlar için güvenli mi?",
+  services_vaccination_faq1_a: "Aşılar genellikle güvenlidir, ancak evcil hayvanınızın iyi bir aday olduğundan emin olmak için önceden kapsamlı bir sağlık kontrolü yaparız. Herhangi bir endişeyi tartışacağız.",
+  services_vaccination_faq2_q: "Temel aşılar nelerdir?",
+  services_vaccination_faq2_a: "Temel aşılar, korudukları hastalıkların yaygınlığı ve ciddiyeti nedeniyle yaşam tarzından bağımsız olarak tüm evcil hayvanlar için önerilir (örn. Kuduz, Gençlik Hastalığı).",
+  
+  // Dental Care
+  services_dental_title: "Diş Bakımı: Daha Parlak Bir Gülümseme ve Daha Sağlıklı Evcil Hayvan İçin",
+  services_dental_desc: "İyi ağız hijyeni, diş eti hastalığı ve enfeksiyonlar gibi sorunları önleyerek evcil hayvanınızın genel sağlığı için çok önemlidir. Diş bakım hizmetlerimiz kapsamlı muayeneler, profesyonel temizlikler ve evcil hayvanınızın evde ağız sağlığını koruma konusunda rehberlik içerir.",
+  services_dental_process_title: "Diş Bakım Sürecimiz:",
+  services_dental_exam: "Ağız Muayenesi",
+  services_dental_cleaning: "Profesyonel Temizlik",
+  services_dental_treatment: "Tedavi (gerekirse)",
+  services_dental_home_care: "Ev Bakım Rehberliği",
+  services_dental_faq1_q: "Evcil hayvanımın diş sorunları olduğunu nasıl anlayabilirim?",
+  services_dental_faq1_a: "Belirtiler arasında kötü nefes, görünür tartar, kırmızı veya kanayan diş etleri, yemek yeme zorluğu veya ağza pençe atma yer alır. Düzenli kontroller sorunları erken yakalamamıza yardımcı olur.",
+  services_dental_faq2_q: "Evcil hayvanımın dişlerini evde fırçalayabilir miyim?",
+  services_dental_faq2_a: "Evet, evcil hayvana özel diş macunu ile günlük fırçalama oldukça etkilidir. Ziyaretiniz sırasında doğru tekniği gösterebiliriz.",
+  
+  // Emergency Care
+  services_emergency_title: "Acil Bakım: En Çok İhtiyacınız Olduğunda Hazırız",
+  services_emergency_desc: "Acil durumlarda her an önemlidir. Ekibimiz, evcil hayvanınız için acil ve kritik bakım sağlamaya hazırdır, zorlu zamanlarda size rehberlik etmek için gelişmiş izleme ve acil durum sonrası destek ile.",
+  services_emergency_steps_title: "Acil Müdahale Adımlarımız:",
+  services_emergency_call: "Önce Bizi Arayın",
+  services_emergency_assessment: "Acil Değerlendirme",
+  services_emergency_treatment: "Kritik Tedavi",
+  services_emergency_support: "Devam Eden Destek",
+  services_emergency_faq1_q: "Evcil hayvan acil durumu nedir?",
+  services_emergency_faq1_a: "Örnekler arasında şiddetli kanama, nefes alma zorluğu, çökme, ani topallık, toksin yutma veya önemli travma yer alır. Şüphe duyduğunuzda hemen bizi arayın.",
+  services_emergency_faq2_q: "Evcil hayvanımı getirmeden önce ne yapmalıyım?",
+  services_emergency_faq2_a: "Mümkünse, bize haber vermek ve gelişiniz için hazırlanmamıza izin vermek için yoldayken bizi arayın. Evcil hayvanınızı sakin tutmaya yardımcı olmak için sakin kalın.",
+  
+  // Nutritional Counseling
+  services_nutrition_title: "Beslenme Danışmanlığı: Evcil Hayvanınızın En İyi Yaşamını Besleme",
+  services_nutrition_desc: "Doğru beslenme, evcil hayvanınızın sağlığı ve mutluluğu için temeldir. Uzman rehberliğimiz, özelleştirilmiş diyet planları, kilo yönetimi programları ve alerji veya intoleranslar için tavsiyeler sağlayarak evcil hayvanınızın doğru yakıtı almasını sağlar.",
+  services_nutrition_approach_title: "Beslenme Yaklaşımımız:",
+  services_nutrition_assessment: "Diyet Değerlendirmesi",
+  services_nutrition_plan: "Özel Plan",
+  services_nutrition_monitoring: "İlerleme İzleme",
+  services_nutrition_support: "Devam Eden Destek",
+  services_nutrition_faq1_q: "Evcil hayvanımın fazla kilolu olduğunu nasıl anlarım?",
+  services_nutrition_faq1_a: "Evcil hayvanınızın kaburgalarını sert basmadan kolayca hissedebilmelisiniz ve görünür bir beli olmalıdır. Muayene sırasında profesyonel bir değerlendirme sağlayabiliriz.",
+  services_nutrition_faq2_q: "Ev yapımı diyetler hakkında ne dersiniz?",
+  services_nutrition_faq2_a: "Ev yapımı diyetler bir seçenek olabilir, ancak tam beslenme sağlamak için dikkatli planlama gerektirir. Dengeli bir tarif oluşturmanıza yardımcı olabiliriz.",
+  
+  // Behavioral Therapy
+  services_behavioral_title: "Davranış Terapisi: Uyumlu Bir Ev Yaratma",
+  services_behavioral_desc: "Davranış sorunlarını ele almak, evcil hayvanınızın yaşam kalitesini ve onlarla olan bağınızı önemli ölçüde iyileştirebilir. Davranış terapisi hizmetlerimiz, mutlu ve dengeli bir ortamı teşvik etmek için özelleştirilmiş eğitim planları, kaygı ve saldırganlık yönetimi ve zenginleştirme stratejileri sunar.",
+  services_behavioral_process_title: "Davranış Desteği Sürecimiz:",
+  services_behavioral_assessment: "Davranış Değerlendirmesi",
+  services_behavioral_plan: "Özelleştirilmiş Plan",
+  services_behavioral_training: "Eğitim Seansları",
+  services_behavioral_integration: "Ev Entegrasyonu",
+  services_behavioral_faq1_q: "Tüm davranış sorunları çözülebilir mi?",
+  services_behavioral_faq1_a: "Birçok davranış sorunu tutarlı terapi ve sahip bağlılığı ile önemli ölçüde iyileştirilebilir veya çözülebilir. Pozitif, kalıcı değişim hedefliyoruz.",
+  services_behavioral_faq2_q: "Davranış terapisi ne kadar sürer?",
+  services_behavioral_faq2_a: "Süre, sorunun karmaşıklığına ve evcil hayvanınızın bireysel öğrenme hızına bağlı olarak değişir. İlk konsültasyonda gerçekçi beklentiler belirleyeceğiz.",
+  
+  service_preventative_title: "Önleyici Bakım",
+  service_preventative_desc: "Evcil hayvanınızın uzun vadeli sağlığını sağlamak için düzenli sağlık muayeneleri, aşılar ve parazit önleme.",
+  service_diagnostics_title: "Tanı ve Tedavi",
+  service_diagnostics_desc: "Çeşitli tıbbi durumlar için gelişmiş tanı araçları ve tedavi seçenekleri.",
+  service_surgery_title: "Cerrahi ve Rehabilitasyon",
+  service_surgery_desc: "Evcil hayvanınızın iyileşmesine yardımcı olmak için uzman cerrahi prosedürler ve ameliyat sonrası bakım.",
+  
+  // Team
+  team_title: "Şefkatli Ekibimizle Tanışın",
+  team_subtitle: "Deneyimli ve şefkatli veteriner hekimlerimiz ve personelimiz, evcil hayvanlarınız için mümkün olan en iyi bakımı sağlamaya kararlıdır.",
+  team_emily_name: "Dr. Emily Carter",
+  team_emily_desc: "Küçük hayvan bakımında 15 yıldan fazla deneyime sahip baş veteriner hekim.",
+  team_david_name: "Dr. David Lee",
+  team_david_desc: "Kedi tıbbı ve cerrahisi uzmanı.",
+  team_sarah_name: "Sarah Johnson",
+  team_sarah_desc: "Hayvan refahına tutkuyla bağlı sertifikalı veteriner teknisyeni.",
+  
+  // Footer
+  footer_tagline: "Evcil Hayvanınızın Sağlık Ortağı",
+  footer_quick_links: "Hızlı Bağlantılar",
+  footer_services: "Hizmetlerimiz",
+  footer_contact: "İletişim",
+  footer_emergency_care: "Acil Bakım",
+  footer_surgery: "Cerrahi",
+  footer_dental: "Diş Bakımı",
+  footer_grooming: "Tımar",
+  footer_vaccinations: "Aşılar",
+  footer_phone: "Telefon",
+  footer_email: "E-posta",
+  footer_address: "Adres",
+  footer_copyright: "PetCare Clinic. Tüm hakları saklıdır.",
+  footer_privacy: "Gizlilik Politikası",
+  footer_terms: "Hizmet Şartları",
+  footer_made_with: "ile yapıldı",
+  footer_for_pets: "evcil hayvanlar için",
+  
+  // Blog
+  blog_title: "Blogumuz",
+  blog_subtitle: "Evcil hayvan sağlığı ve bakımında en son gelişmelerden haberdar olun. Uzman tavsiyeleri, iç ısıtan hikayeler ve pratik ipuçları.",
+  blog_search_placeholder: "Makaleleri ara...",
+  blog_category_all: "Tümü",
+  blog_category_health: "Sağlık",
+  blog_category_nutrition: "Beslenme",
+  blog_category_training: "Eğitim",
+  blog_read_more: "Devamını Oku →",
+  blog_close: "Kapat",
+  
+  // Blog Articles
+  blog_article1_title: "Evcil Hayvanınızın Beslenme İhtiyaçlarını Anlama",
+  blog_article1_desc: "Evcil hayvanınızın yaşı ve ırkı için doğru yiyeceği nasıl seçeceğinizi öğrenin.",
+  blog_article1_content: "Doğru diyet seçimi marka isimlerinden çok daha fazlasıdır.\n\nYaşam evresini (yavru/kedi, yetişkin, yaşlı) ve ırka özgü ihtiyaçları göz önünde bulundurarak başlayın. Makro besinleri (protein, yağ, karbonhidrat) dengeleyin ve temel mikro besinleri (kediler için taurin, cilt/tüy için omega-3) sağlayın.\n\nYeni diyetleri 7-10 gün boyunca kademeli olarak tanıtın ve mide rahatsızlığını önlemek için her zaman temiz su bulundurun. Ani kilo değişimi, donuk tüy veya halsizlik fark ederseniz veterinerinize danışın.",
+  
+  blog_article2_title: "Yaygın Evcil Hayvan Sağlığı Efsaneleri Çürütüldü",
+  blog_article2_desc: "Evcil hayvanınızın sağlığı söz konusu olduğunda gerçekleri kurgudan ayırın.",
+  blog_article2_content: "Efsane: Tahılsız her zaman daha iyidir.\nGerçek: Teşhis edilmiş bir intolerans olmadığı sürece, dengeli diyetler (tahıllarla birlikte) genellikle güvenli ve faydalıdır.\n\nEfsane: İç mekan evcil hayvanları aşıya ihtiyaç duymaz.\nGerçek: Temel aşılar yaşam tarzından bağımsız olarak yaşamı tehdit eden hastalıklara karşı koruma sağlar.\n\nÇevrimiçi iddiaları her zaman veterinerinizle tartışın.",
+  
+  blog_article3_title: "Düzenli Kontrollerin Önemi",
+  blog_article3_desc: "Düzenli veteriner ziyaretlerinin evcil hayvanınızın refahı için neden kritik olduğunu keşfedin.",
+  blog_article3_content: "Yıllık veya altı aylık muayeneler sorunları erken tespit etmeye yardımcı olur.\n\nTemel tanı testleri (kan tahlili, idrar tahlili) gizli sorunları ortaya çıkarır. Diş kontrolleri, vücut durumu skorlaması ve parazit taraması önleyici bakımın hayati parçalarıdır.\n\nErken müdahale sonuçları iyileştirir ve genellikle uzun vadeli maliyetleri azaltır.",
+  
+  blog_article4_title: "İyi Davranışlı Evcil Hayvan İçin Eğitim İpuçları",
+  blog_article4_desc: "Evcil hayvanınızı eğitmek ve bağınızı güçlendirmek için etkili teknikler.",
+  blog_article4_content: "Tutarlılık kraldır.\n\nYüksek değerli ödüllerle kısa, sık seanslar kullanın. İstenen davranışları hemen pekiştirin ve hataları önlemek için çevreyi yönetin.\n\nCeza temelli yöntemlerden kaçının; bunlar kaygıyı artırabilir ve güvene zarar verebilir.",
+  
+  blog_article5_title: "Evcil Hayvanınız İçin İlk Yardım",
+  blog_article5_desc: "Veterinere ulaşmadan önce yaygın evcil hayvan acil durumlarını ele almak için temel ipuçları.",
+  blog_article5_content: "Küçük bir kit oluşturun: gazlı bez, antiseptik, cımbız, dijital termometre ve veteriner iletişim bilgileri.\n\nKırmızı bayrakları bilin: nefes alma zorluğu, tepkisiz davranış, nöbetler veya şiddetli kanama — acil veteriner bakımı arayın.\n\nHerhangi bir ilaç vermeden önce şüphe duyduğunuzda veterinerinizi arayın.",
+  
+  blog_article6_title: "Yaşlı Evcil Hayvanınızı Sağlıklı Tutma",
+  blog_article6_desc: "Yaşlanan arkadaşınızın altın yıllarının mutlu olmasını sağlamak için bakımı ayarlama.",
+  blog_article6_content: "Yaşlı evcil hayvanlar nazik egzersiz, eklem desteği ve düzenli taramalarla gelişir.\n\nKilo almayı önlemek için kalorileri ayarlayın, rahatlık için yumuşak yatak ekleyin ve hareketlilik ile bilişi izleyin.\n\nİştah, susuzluk veya davranıştaki ani değişiklikleri veterinerinize derhal bildirin.",
+  
+  blog_article7_title: "Sağlıklı Cilt ve Tüy İçin Tımar Temelleri",
+  blog_article7_desc: "Her sahibin bilmesi gereken fırçalama, banyo ve tırnak bakımı temelleri.",
+  blog_article7_content: "Rutin fırçalama tüy dökümünü azaltır ve düğümleri önler.\n\nTüre uygun şampuanlar kullanın ve kalıntıyı önlemek için iyice durulayın. Kulakları haftalık kontrol edin, tırnakları dikkatli kesin ve sıcak noktalar veya sürekli kaşınma gibi kırmızı bayrakları izleyin.",
+  
+  blog_article8_title: "Parazit Önleme Rehberi",
+  blog_article8_desc: "Pire, kene ve solucanlar — evcil hayvanınızı yıl boyunca koruyun.",
+  blog_article8_content: "Veteriner onaylı önleyicileri tutarlı olarak kullanın.\n\nDış mekan zamanından sonra keneleri kontrol edin, yatakları düzenli temizleyin ve dışkıyı derhal toplayın. Solucan giderme programları değişir — özelleştirilmiş plan için veterinerinize sorun.",
+  
+  blog_article9_title: "Diş Hijyeni Derinlemesine",
+  blog_article9_desc: "Plak, tartar ve ağız sağlığını korumak için günlük rutinler.",
+  blog_article9_content: "Günlük fırçalama altın standarttır.\n\nEvcil hayvan güvenli diş macunu kullanın, diş çiğneme oyuncakları sunun ve tavsiye edildiği gibi profesyonel temizlik planlayın. Kötü nefes, salya akması veya ağza pençe atma diş muayenesi gerektirir.",
+  
+  blog_article10_title: "Yavru Sosyalleştirme Temelleri",
+  blog_article10_desc: "Davranış sorunlarını önlemek için erken pozitif deneyimler oluşturun.",
+  blog_article10_content: "Yavruları insanlara, seslere ve çevrelere kademeli olarak maruz bırakın.\n\nSakin merakı ödüllendirin, bunaltıcı durumlardan kaçının ve yeni deneyimleri ödüllerle eşleştirin.\n\nAşılar güncel olduğunda zorla olmayan yavru sınıflarına kaydolun.",
+  
+  blog_article11_title: "Evcil Hayvanlarla Seyahat: Güvenlik Kontrol Listesi",
+  blog_article11_desc: "Taşıyıcılardan hidrasyona — sorunsuz bir yolculuk için hazırlık.",
+  blog_article11_content: "Güvenli taşıyıcılar veya emniyet kemeri koşumları, tanıdık yatak takımları paketleyin ve su ve tuvalet için mola planlayın.\n\nTıbbi kayıtları, kimlik etiketlerini ve mikroçip bilgilerini taşıyın. Uçuşlar için havayolu politikalarını önceden onaylayın.",
+  
+  blog_article12_title: "Evcil Hayvanınızın Kan Tahlilini Anlama",
+  blog_article12_desc: "CBC ve kimya panelleri sade dilde açıklandı.",
+  blog_article12_content: "CBC kırmızı/beyaz hücreleri ve trombositleri değerlendirir; kimya karaciğer ve böbrekler gibi organları değerlendirir.\n\nZaman içindeki eğilimler tek değerlerden daha önemlidir. Veterineriniz sonuçları geçmiş ve muayene bulgularıyla birlikte yorumlar.",
+  
+  blog_extra_notes: "Ek Notlar ve İpuçları",
+  blog_extra_content: "Düzenli takip, dengeli beslenme ve uygun egzersiz üçlüsü; evcil hayvanların yaşam kalitesini belirgin şekilde artırır. Beslenme veya davranışta ani değişiklikler gözlemlerseniz, bunları mutlaka tarih ve bağlam bilgisiyle not alın ve veteriner randevusunda paylaşın.",
+  blog_extra_tips: [
+    "Yeni mamaya geçişte 7–10 günlük kademeli bir karışım uygulayın.",
+    "Su tüketimindeki artış/azalış olası sağlık sinyalleridir; takip edin.",
+    "Düzenli diş bakımı (fırçalama ve kontrol) genel sağlığı destekler.",
+    "Tarama ve tırnak kesimi gibi bakım rutinlerini pozitif pekiştirme ile yapın.",
+    "Parazit önleyicileri mevsimsel değil, yıl boyu planlı kullanın."
+  ],
+  blog_extra_final: "Davranış eğitiminde tutarlılık ve kısa, keyifli tekrarlar en iyi sonucu verir. Ceza yerine ödül temelli yöntemler; kaygıyı azaltır, öğrenmeyi hızlandırır ve güven bağını güçlendirir. Her evcil hayvan benzersizdir; bu yüzden planlarınızı yaş, ırk ve sağlık durumuna göre özelleştirin.",
+  
+  // Gallery
+  gallery_title: "Foto Galerimiz",
+  gallery_subtitle: "Kliniğimizden öne çıkanlar, mutlu hastalar ve topluluk anları.",
+  
+  // About Us
+  about_title: "Topluluk Odaklı Ekibimiz",
+  about_meet_vets: "Veteriner Hekimlerimizle Tanışın",
+  about_mission_title: "Misyonumuz",
+  about_mission_content: "PetCare Clinic'te misyonumuz, şefkat ve dürüstlük ile olağanüstü veteriner bakımı sağlamaktır. Evcil hayvanlarınızın sağlığı ve refahına adanmışız, rutin kontrollerden gelişmiş tedavilere kadar geniş bir hizmet yelpazesi sunuyoruz. Deneyimli profesyonellerden oluşan ekibimiz, hem evcil hayvanlar hem de sahipleri için sıcak ve destekleyici bir ortam yaratmaya kararlıdır. Müşterilerimizle güven ve karşılıklı saygıya dayalı kalıcı ilişkiler kurmaya inanıyoruz. Evcil hayvanınızın sağlığı bizim en büyük önceliğimizdir ve uygulamamızın her alanında en yüksek bakım standardını sunmaya çalışıyoruz.",
+  about_community_title: "Topluluk Girişimlerimiz",
+  about_testimonials_title: "Müşteri Yorumları",
+  
+  // Veterinarians
+  about_vet1_name: "Dr. Amelia Harper",
+  about_vet1_desc: "Bu toplulukta doğup büyüyen Dr. Harper, kedi sağlığı konusunda tutkulu ve yerel kedi sahiplendirme etkinliklerinde sık sık gönüllü olarak çalışır.",
+  about_vet2_name: "Dr. Ethan Carter",
+  about_vet2_desc: "Yaşam boyu köpek sahibi ve sakin olan Dr. Carter, köpek cerrahisi konusunda uzmanlaşmış ve yıllık 'Park'ta Patiler' hayır yürüyüşümüze öncülük eder.",
+  about_vet3_name: "Dr. Olivia Bennett",
+  about_vet3_desc: "Dr. Bennett, yerel vahşi yaşam kurtarma organizasyonunun aktif bir üyesidir, egzotik hayvan bakımı ve mahallemizin benzersiz faunası için rehabilitasyona odaklanır.",
+  about_vet4_name: "Dr. Noah Thompson",
+  about_vet4_desc: "Kliniğimizden sadece birkaç blok ötede büyüyen Dr. Thompson, genel uygulama veterinerimizdir ve tüm mahalle evcil hayvanlarına erişilebilir ve dostane bakım sağlamaya kararlıdır.",
+  
+  // Community Initiatives
+  about_initiative1_title: "Yıllık Evcil Hayvan Fuarı ve Sağlık Kontrolleri",
+  about_initiative1_desc: "Her yaz, yerel evcil hayvan sahipleri için ücretsiz sağlık taramaları, mikroçip uygulaması ve eğitim atölyeleri sunan ücretsiz bir evcil hayvan fuarı düzenliyoruz.",
+  about_initiative1_link: "Etkinlik fotoğraflarını görün",
+  about_initiative2_title: "Yerel Barınaklarla Ortaklıklar",
+  about_initiative2_desc: "\"Mutlu Kuyruklar Barınağı\" ve \"Patiler ve Pençeler Kurtarma\" ile gururla ortaklık yapıyoruz, indirimli veteriner hizmetleri sağlıyor ve sahiplendirme kampanyalarını destekliyoruz.",
+  about_initiative2_link: "Ortaklarımız hakkında bilgi edinin",
+  about_initiative3_title: "Gönüllü ve Eğitim Programları",
+  about_initiative3_desc: "Topluluk temizlik günlerine, evcil hayvan güvenliği atölyelerine katılın veya yerel hayvan refahı etkinliklerimizde yardım edin. Yardımınız fark yaratır!",
+  about_initiative3_link: "Bizimle gönüllü olun",
+  
+  // Testimonials
+  about_testimonial1_name: "Sophia Clark",
+  about_testimonial1_time: "2 ay önce",
+  about_testimonial1_content: "\"Kedim Whiskers'ı yıllardır PetCare Clinic'e getiriyorum ve her zaman sağladıkları bakım ve ilgi seviyesinden etkilendim. Dr. Harper inanılmaz bilgili ve şefkatli, tüm personel dostane ve yardımcı. Onları kesinlikle tavsiye ederim!\"",
+  about_testimonial2_name: "Liam Evans",
+  about_testimonial2_time: "3 ay önce",
+  about_testimonial2_content: "\"Köpeğim Buddy'nin yakın zamanda ameliyat olması gerekiyordu ve çok endişeliydim. Dr. Carter ve PetCare Clinic ekibi harikaydı. Her adımda beni bilgilendirdiler ve Buddy hızla iyileşti. Uzmanlıkları ve bakımları için çok minnettarım.\"",
+  about_testimonial3_name: "Isabella Green",
+  about_testimonial3_time: "4 ay önce",
+  about_testimonial3_content: "\"Dr. Bennett, egzotik evcil hayvanlarımla güvendiğim tek veteriner. Benzersiz ihtiyaçları konusunda inanılmaz bilgili ve her zaman mükemmel bakım sağlıyor. Klinik temiz, iyi donanımlı ve personel her zaman sıcakkanlı. Evcil hayvanlarımı başka hiçbir yere götürmezdim.\"",
+  
+  // Contact
+  contact_title: "İletişim",
+  contact_subtitle: "Sorularınız için bizimle iletişime geçin veya randevu alın.",
+  
+  // Contact Form
+  contact_form_title: "Hızlı Randevu Paneli",
+  contact_pet_type: "Evcil Hayvan Türü Seçin",
+  contact_pet_dog: "Köpek",
+  contact_pet_cat: "Kedi",
+  contact_pet_bird: "Kuş",
+  contact_pet_rabbit: "Tavşan",
+  contact_pet_other: "Diğer",
+  contact_pet_name: "Evcil Hayvanın Adı",
+  contact_pet_name_placeholder: "Fido",
+  contact_species: "Tür",
+  contact_species_placeholder: "Köpek",
+  contact_breed: "Irk",
+  contact_breed_placeholder: "Golden Retriever",
+  contact_owner_info: "Sahip Bilgileri",
+  contact_owner_name: "Adınız",
+  contact_owner_name_placeholder: "Ayşe Yılmaz",
+  contact_email: "E-posta",
+  contact_email_placeholder: "ayse.yilmaz@example.com",
+  contact_phone: "Telefon Numarası",
+  contact_phone_placeholder: "(555) 123-4567",
+  contact_appointment_details: "Randevu Detayları",
+  contact_service: "Hizmet",
+  contact_select_service: "Hizmet seçin",
+  contact_routine_checkup: "Rutin Kontrol",
+  contact_vaccination: "Aşı",
+  contact_grooming: "Tımar",
+  contact_emergency: "Acil",
+  contact_preferred_datetime: "Tercih Edilen Tarih ve Saat",
+  contact_available_slots: "Müsait Saatler (Pzt, 4 Eki)",
+  contact_next_available: "Sonraki Müsait Saat: Sal, 5 Eki, 09:00",
+  contact_additional_notes: "Ek Notlar",
+  contact_notes_placeholder: "Herhangi bir özel endişe veya isteğiniz var mı?",
+  contact_confirm_appointment: "Hızlı Randevuyu Onayla",
+  contact_immediate_assistance: "Acil yardım için lütfen bizi arayın:",
 }
 
 

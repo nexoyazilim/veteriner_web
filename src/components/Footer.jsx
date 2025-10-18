@@ -1,7 +1,10 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import { useI18n } from '../i18n.jsx'
+import logoImage from '/assets/images/site_logo.png'
 
 export default function Footer() {
+  const { t } = useI18n()
   const year = new Date().getFullYear()
   return (
     <footer className="bg-gradient-to-br from-background-light to-background-light/90 dark:from-background-dark dark:to-background-dark/90 border-t-2 border-border-light dark:border-border-dark shadow-lg ">
@@ -13,11 +16,11 @@ export default function Footer() {
             <Link to="/" className="inline-flex flex-col items-center lg:items-start gap-4 mb-6">
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-lg"></div>
-                <img src="/assets/images/site_logo.png" alt="PetCare Clinic Logo" className="relative h-24 w-24 sm:h-28 sm:w-28 lg:h-32 lg:w-32 object-contain" />
+                <img src={logoImage} alt="PetCare Clinic Logo" className="relative h-24 w-24 sm:h-28 sm:w-28 lg:h-32 lg:w-32 object-contain" />
               </div>
               <div className="text-center lg:text-left">
-                <h3 className="text-2xl sm:text-3xl font-bold text-foreground-light dark:text-foreground-dark">PetCare Clinic</h3>
-                <p className="text-sm sm:text-base text-primary font-medium">Your Pet's Health Partner</p>
+                <h3 className="text-2xl sm:text-3xl font-bold text-foreground-light dark:text-foreground-dark">Veterinet Klinik</h3>
+                <p className="text-sm sm:text-base text-primary font-medium">{t('footer_tagline')}</p>
               </div>
             </Link>
             <div className="flex gap-4 justify-center lg:justify-start">
@@ -41,31 +44,31 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="text-center lg:text-left">
-            <h4 className="text-lg font-bold text-foreground-light dark:text-foreground-dark mb-6">Quick Links</h4>
+            <h4 className="text-lg font-bold text-foreground-light dark:text-foreground-dark mb-6">{t('footer_quick_links')}</h4>
             <nav className="space-y-3">
-              <NavLink to="/" end className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">Home</NavLink>
-              <NavLink to="/services" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">Services</NavLink>
-              <NavLink to="/about" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">About Us</NavLink>
-              <NavLink to="/blog" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">Blog</NavLink>
-              <NavLink to="/contact" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">Contact</NavLink>
+              <NavLink to="/" end className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">{t('nav_home')}</NavLink>
+              <NavLink to="/services" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">{t('nav_services')}</NavLink>
+              <NavLink to="/about" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">{t('nav_about')}</NavLink>
+              <NavLink to="/blog" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">{t('nav_blog')}</NavLink>
+              <NavLink to="/contact" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">{t('nav_contact')}</NavLink>
             </nav>
           </div>
 
           {/* Services */}
           <div className="text-center lg:text-left">
-            <h4 className="text-lg font-bold text-foreground-light dark:text-foreground-dark mb-6">Our Services</h4>
+            <h4 className="text-lg font-bold text-foreground-light dark:text-foreground-dark mb-6">{t('footer_services')}</h4>
             <nav className="space-y-3">
-              <a href="#" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">Emergency Care</a>
-              <a href="#" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">Surgery</a>
-              <a href="#" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">Dental Care</a>
-              <a href="#" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">Grooming</a>
-              <a href="#" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">Vaccinations</a>
+              <a href="#" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">{t('footer_emergency_care')}</a>
+              <a href="#" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">{t('footer_surgery')}</a>
+              <a href="#" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">{t('footer_dental')}</a>
+              <a href="#" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">{t('footer_grooming')}</a>
+              <a href="#" className="block text-foreground-muted-light dark:text-foreground-muted-dark hover:text-primary transition-colors">{t('footer_vaccinations')}</a>
             </nav>
           </div>
 
           {/* Contact Info */}
           <div className="text-center lg:text-left">
-            <h4 className="text-lg font-bold text-foreground-light dark:text-foreground-dark mb-6">Get In Touch</h4>
+            <h4 className="text-lg font-bold text-foreground-light dark:text-foreground-dark mb-6">{t('footer_contact')}</h4>
             <div className="space-y-4">
               <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <div className="p-2 rounded-full bg-primary/10 flex-shrink-0">
@@ -74,7 +77,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-foreground-light dark:text-foreground-dark">Phone</p>
+                  <p className="text-sm font-medium text-foreground-light dark:text-foreground-dark">{t('footer_phone')}</p>
                   <p className="text-foreground-muted-light dark:text-foreground-muted-dark">+90 555 555 55 55</p>
                 </div>
               </div>
@@ -85,7 +88,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-foreground-light dark:text-foreground-dark">Email</p>
+                  <p className="text-sm font-medium text-foreground-light dark:text-foreground-dark">{t('footer_email')}</p>
                   <p className="text-foreground-muted-light dark:text-foreground-muted-dark">info@petcare.clinic</p>
                 </div>
               </div>
@@ -97,7 +100,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-foreground-light dark:text-foreground-dark">Address</p>
+                  <p className="text-sm font-medium text-foreground-light dark:text-foreground-dark">{t('footer_address')}</p>
                   <p className="text-foreground-muted-light dark:text-foreground-muted-dark">İstanbul, Türkiye</p>
                 </div>
               </div>
@@ -109,19 +112,12 @@ export default function Footer() {
         <div className="pt-8 border-t border-border-light dark:border-border-dark">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-foreground-muted-light dark:text-foreground-muted-dark">
-              <p>© {year} PetCare Clinic. All rights reserved.</p>
+              <p>© {year} {t('footer_copyright')}</p>
               <div className="hidden md:block w-px h-4 bg-border-light dark:bg-border-dark"></div>
               <div className="flex gap-6">
-                <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+                <a href="#" className="hover:text-primary transition-colors">{t('footer_privacy')}</a>
+                <a href="#" className="hover:text-primary transition-colors">{t('footer_terms')}</a>
               </div>
-            </div>
-            <div className="flex items-center gap-2 text-sm text-foreground-muted-light dark:text-foreground-muted-dark">
-              <span>Made with</span>
-              <svg className="h-4 w-4 text-red-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd"/>
-              </svg>
-              <span>for pets</span>
             </div>
           </div>
         </div>

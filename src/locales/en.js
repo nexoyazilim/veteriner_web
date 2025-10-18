@@ -1,11 +1,291 @@
 export default {
+  // Hero Section
   hero_title: "Your Pet's Health is Our Priority",
   hero_subtitle: "Providing compassionate and comprehensive veterinary care for your beloved companions.",
   book_appointment: "Book Appointment",
+  
+  // Navigation
   nav_home: "Home",
   nav_services: "Services",
+  nav_blog: "Blog",
+  nav_gallery: "Gallery",
   nav_about: "About Us",
   nav_contact: "Contact",
+  
+  // Services
+  services_title: "Our Services",
+  services_comprehensive_title: "Comprehensive Veterinary Services",
+  services_comprehensive_subtitle: "From routine check-ups to specialized treatments, we offer a wide range of services to keep your pet healthy and happy.",
+  services_faq_title: "Frequently Asked Questions:",
+  
+  // Wellness Exams
+  services_wellness_title: "Wellness Exams: Ensuring a Happy, Healthy Life",
+  services_wellness_desc: "Regular check-ups are key to your pet's long-term well-being. Our thorough wellness exams focus on proactive health management, early disease detection, and personalized care plans tailored to your pet's unique needs.",
+  services_wellness_expect_title: "What to Expect During a Wellness Exam:",
+  services_wellness_scheduling: "Scheduling",
+  services_wellness_comprehensive: "Comprehensive Check",
+  services_wellness_assessment: "Health Assessment",
+  services_wellness_plan: "Personalized Plan",
+  services_wellness_faq1_q: "How often should my pet have a wellness exam?",
+  services_wellness_faq1_a: "For most adult pets, an annual wellness exam is recommended. Puppies, kittens, and senior pets may require more frequent visits.",
+  services_wellness_faq2_q: "What should I bring to the appointment?",
+  services_wellness_faq2_a: "Please bring any relevant medical records, a list of medications, and be prepared to discuss your pet's diet and behavior.",
+  
+  // Vaccinations
+  services_vaccination_title: "Vaccinations: Building Strong Immunity Together",
+  services_vaccination_desc: "Vaccinations are vital for protecting your pet from serious, preventable diseases. We assess your pet's lifestyle and risk factors to create a tailored vaccination schedule, ensuring optimal protection and peace of mind.",
+  services_vaccination_journey_title: "Understanding Your Pet's Vaccination Journey:",
+  services_vaccination_risk: "Risk Assessment",
+  services_vaccination_plan: "Tailored Plan",
+  services_vaccination_administered: "Vaccine Administered",
+  services_vaccination_reminder: "Reminder for Boosters",
+  services_vaccination_faq1_q: "Are vaccines safe for all pets?",
+  services_vaccination_faq1_a: "Vaccines are generally safe, but we conduct a thorough health check beforehand to ensure your pet is a good candidate. We'll discuss any potential concerns.",
+  services_vaccination_faq2_q: "What are core vaccines?",
+  services_vaccination_faq2_a: "Core vaccines are recommended for all pets, regardless of lifestyle, due to the prevalence and severity of the diseases they protect against (e.g., Rabies, Distemper).",
+  
+  // Dental Care
+  services_dental_title: "Dental Care: For a Brighter Smile and Healthier Pet",
+  services_dental_desc: "Good oral hygiene is crucial for your pet's overall health, preventing issues like gum disease and infections. Our dental care services include comprehensive exams, professional cleanings, and guidance on maintaining your pet's oral health at home.",
+  services_dental_process_title: "Our Dental Care Process:",
+  services_dental_exam: "Oral Exam",
+  services_dental_cleaning: "Professional Cleaning",
+  services_dental_treatment: "Treatment (if needed)",
+  services_dental_home_care: "Home Care Guidance",
+  services_dental_faq1_q: "How can I tell if my pet has dental problems?",
+  services_dental_faq1_a: "Signs include bad breath, visible tartar, red or bleeding gums, difficulty eating, or pawing at the mouth. Regular check-ups help us catch issues early.",
+  services_dental_faq2_q: "Can I brush my pet's teeth at home?",
+  services_dental_faq2_a: "Yes, daily brushing with pet-specific toothpaste is highly effective. We can demonstrate the proper technique during your visit.",
+  
+  // Emergency Care
+  services_emergency_title: "Emergency Care: Ready When You Need Us Most",
+  services_emergency_desc: "In urgent situations, every moment counts. Our team is prepared to provide immediate and critical care for your pet, with advanced monitoring and post-emergency support to guide you through challenging times.",
+  services_emergency_steps_title: "Our Emergency Response Steps:",
+  services_emergency_call: "Call Us First",
+  services_emergency_assessment: "Immediate Assessment",
+  services_emergency_treatment: "Critical Treatment",
+  services_emergency_support: "Ongoing Support",
+  services_emergency_faq1_q: "What constitutes a pet emergency?",
+  services_emergency_faq1_a: "Examples include severe bleeding, difficulty breathing, collapse, sudden lameness, ingestion of toxins, or significant trauma. When in doubt, call us immediately.",
+  services_emergency_faq2_q: "What should I do before bringing my pet in?",
+  services_emergency_faq2_a: "If possible, call us while en route to give us a heads-up and allow us to prepare for your arrival. Remain calm to help keep your pet calm.",
+  
+  // Nutritional Counseling
+  services_nutrition_title: "Nutritional Counseling: Fueling Your Pet's Best Life",
+  services_nutrition_desc: "Proper nutrition is foundational to your pet's health and happiness. Our expert guidance provides customized diet plans, weight management programs, and advice for allergies or intolerances, ensuring your pet gets the right fuel.",
+  services_nutrition_approach_title: "Our Nutritional Approach:",
+  services_nutrition_assessment: "Diet Assessment",
+  services_nutrition_plan: "Custom Plan",
+  services_nutrition_monitoring: "Progress Monitoring",
+  services_nutrition_support: "Ongoing Support",
+  services_nutrition_faq1_q: "How do I know if my pet is overweight?",
+  services_nutrition_faq1_a: "You should be able to easily feel your pet's ribs without pressing hard, and they should have a visible waist. We can provide a professional assessment during an exam.",
+  services_nutrition_faq2_q: "What about homemade diets?",
+  services_nutrition_faq2_a: "While homemade diets can be an option, they require careful planning to ensure complete nutrition. We can help you formulate a balanced recipe.",
+  
+  // Behavioral Therapy
+  services_behavioral_title: "Behavioral Therapy: Creating a Harmonious Home",
+  services_behavioral_desc: "Addressing behavioral issues can significantly improve your pet's quality of life and your bond with them. Our behavioral therapy services offer customized training plans, anxiety and aggression management, and enrichment strategies to foster a happy and balanced environment.",
+  services_behavioral_process_title: "Our Behavioral Support Process:",
+  services_behavioral_assessment: "Behavior Assessment",
+  services_behavioral_plan: "Tailored Plan",
+  services_behavioral_training: "Training Sessions",
+  services_behavioral_integration: "Home Integration",
+  services_behavioral_faq1_q: "Can all behavioral issues be resolved?",
+  services_behavioral_faq1_a: "Many behavioral issues can be significantly improved or resolved with consistent therapy and owner commitment. We aim for positive, lasting change.",
+  services_behavioral_faq2_q: "How long does behavioral therapy take?",
+  services_behavioral_faq2_a: "The duration varies depending on the issue's complexity and your pet's individual learning pace. We'll set realistic expectations during the initial consultation.",
+  
+  service_preventative_title: "Preventative Care",
+  service_preventative_desc: "Regular wellness exams, vaccinations, and parasite prevention to ensure your pet's long-term health.",
+  service_diagnostics_title: "Diagnostics & Treatment",
+  service_diagnostics_desc: "Advanced diagnostic tools and treatment options for various medical conditions.",
+  service_surgery_title: "Surgery & Rehabilitation",
+  service_surgery_desc: "Expert surgical procedures and post-operative care to aid in your pet's recovery.",
+  
+  // Team
+  team_title: "Meet Our Caring Team",
+  team_subtitle: "Our experienced and compassionate team of veterinarians and staff are dedicated to providing the best possible care for your pets.",
+  team_emily_name: "Dr. Emily Carter",
+  team_emily_desc: "Lead Veterinarian with over 15 years of experience in small animal care.",
+  team_david_name: "Dr. David Lee",
+  team_david_desc: "Specialist in feline medicine and surgery.",
+  team_sarah_name: "Sarah Johnson",
+  team_sarah_desc: "Certified Veterinary Technician with a passion for animal welfare.",
+  
+  // Footer
+  footer_tagline: "Your Pet's Health Partner",
+  footer_quick_links: "Quick Links",
+  footer_services: "Our Services",
+  footer_contact: "Get In Touch",
+  footer_emergency_care: "Emergency Care",
+  footer_surgery: "Surgery",
+  footer_dental: "Dental Care",
+  footer_grooming: "Grooming",
+  footer_vaccinations: "Vaccinations",
+  footer_phone: "Phone",
+  footer_email: "Email",
+  footer_address: "Address",
+  footer_copyright: "PetCare Clinic. All rights reserved.",
+  footer_privacy: "Privacy Policy",
+  footer_terms: "Terms of Service",
+  footer_made_with: "Made with",
+  footer_for_pets: "for pets",
+  
+  // Blog
+  blog_title: "Our Blog",
+  blog_subtitle: "Stay informed with the latest in pet health and wellness. Expert advice, heartwarming stories, and practical tips.",
+  blog_search_placeholder: "Search articles...",
+  blog_category_all: "All",
+  blog_category_health: "Health",
+  blog_category_nutrition: "Nutrition",
+  blog_category_training: "Training",
+  blog_read_more: "Read More →",
+  blog_close: "Close",
+  
+  // Blog Articles
+  blog_article1_title: "Understanding Your Pet's Nutritional Needs",
+  blog_article1_desc: "Learn how to choose the right food for your pet's age and breed.",
+  blog_article1_content: "Choosing the right diet goes beyond brand names.\n\nStart by considering life stage (puppy/kitten, adult, senior) and breed-specific needs. Balance macronutrients (protein, fat, carbs) while ensuring essential micronutrients (taurine for cats, omega-3s for skin/coat).\n\nIntroduce new diets gradually over 7–10 days to avoid GI upset, and keep fresh water available at all times. Consult your vet if you notice sudden weight change, dull coat, or lethargy.",
+  
+  blog_article2_title: "Common Pet Health Myths Debunked",
+  blog_article2_desc: "Separate fact from fiction when it comes to your pet's health.",
+  blog_article2_content: "Myth: Grain-free is always better.\nFact: Unless there's a diagnosed intolerance, balanced diets (with grains) are often safe and beneficial.\n\nMyth: Indoor pets don't need vaccines.\nFact: Core vaccines protect against life-threatening diseases regardless of lifestyle.\n\nAlways discuss online claims with your veterinarian.",
+  
+  blog_article3_title: "The Importance of Regular Check-ups",
+  blog_article3_desc: "Discover why regular veterinary visits are crucial for your pet's well-being.",
+  blog_article3_content: "Annual or bi-annual exams help detect issues early.\n\nBaseline diagnostics (bloodwork, urinalysis) reveal hidden problems. Dental checks, body condition scoring, and parasite screening are vital parts of preventive care.\n\nEarly intervention improves outcomes and often reduces long-term costs.",
+  
+  blog_article4_title: "Training Tips for a Well-Behaved Pet",
+  blog_article4_desc: "Effective techniques to train your pet and strengthen your bond.",
+  blog_article4_content: "Consistency is king.\n\nUse short, frequent sessions with high-value rewards. Reinforce desired behaviors immediately and manage the environment to prevent mistakes.\n\nAvoid punishment-based methods; they can increase anxiety and harm trust.",
+  
+  blog_article5_title: "First Aid for Your Pet",
+  blog_article5_desc: "Essential tips for handling common pet emergencies before you reach the vet.",
+  blog_article5_content: "Create a small kit: gauze, antiseptic, tweezers, digital thermometer, and vet contacts.\n\nKnow red flags: difficulty breathing, unresponsive behavior, seizures, or severe bleeding — seek immediate veterinary care.\n\nWhen in doubt, call your vet before giving any medication.",
+  
+  blog_article6_title: "Keeping Your Senior Pet Healthy",
+  blog_article6_desc: "Adjusting care for your aging companion to ensure their golden years are happy.",
+  blog_article6_content: "Senior pets thrive with gentle exercise, joint support, and regular screenings.\n\nAdjust calories to prevent weight gain, add soft bedding for comfort, and monitor mobility and cognition.\n\nReport sudden changes in appetite, thirst, or behavior to your vet promptly.",
+  
+  blog_article7_title: "Grooming Essentials for Healthy Skin & Coat",
+  blog_article7_desc: "Brushing, bathing, and nail care basics every owner should know.",
+  blog_article7_content: "Routine brushing reduces shedding and prevents mats.\n\nUse species-appropriate shampoos and rinse thoroughly to avoid residue. Check ears weekly, trim nails carefully, and watch for red flags like hot spots or persistent scratching.",
+  
+  blog_article8_title: "Parasite Prevention Guide",
+  blog_article8_desc: "Fleas, ticks, and worms — protect your pet year-round.",
+  blog_article8_content: "Use vet-approved preventives consistently.\n\nCheck for ticks after outdoor time, clean bedding regularly, and pick up waste promptly. Deworming schedules vary — ask your vet for a tailored plan.",
+  
+  blog_article9_title: "Dental Hygiene Deep Dive",
+  blog_article9_desc: "Plaque, tartar, and daily routines to protect oral health.",
+  blog_article9_content: "Daily brushing is the gold standard.\n\nUse pet-safe toothpaste, offer dental chews, and schedule professional cleanings as advised. Bad breath, drooling, or pawing at the mouth warrant a dental exam.",
+  
+  blog_article10_title: "Puppy Socialization Basics",
+  blog_article10_desc: "Build positive experiences early to prevent behavior issues.",
+  blog_article10_content: "Expose puppies to people, sounds, and environments gradually.\n\nReward calm curiosity, avoid overwhelming situations, and pair new experiences with treats.\n\nEnroll in force-free puppy classes once vaccines are up to date.",
+  
+  blog_article11_title: "Traveling with Pets: Safety Checklist",
+  blog_article11_desc: "From crates to hydration — prep for a smooth trip.",
+  blog_article11_content: "Secure carriers or seat-belt harnesses, pack familiar bedding, and schedule breaks for water and potty.\n\nCarry medical records, ID tags, and microchip info. For flights, confirm airline policies well in advance.",
+  
+  blog_article12_title: "Understanding Your Pet's Blood Work",
+  blog_article12_desc: "CBC and chemistry panels explained in plain language.",
+  blog_article12_content: "CBC evaluates red/white cells and platelets; chemistry assesses organs like liver and kidneys.\n\nTrends over time matter more than single values. Your vet interprets results alongside history and exam findings.",
+  
+  blog_extra_notes: "Additional Notes and Tips",
+  blog_extra_content: "Regular monitoring, balanced nutrition, and appropriate exercise trio significantly improve pets' quality of life. If you observe sudden changes in diet or behavior, be sure to note them with date and context information and share them at your veterinary appointment.",
+  blog_extra_tips: [
+    "Apply a gradual 7-10 day transition when switching to new food.",
+    "Increase/decrease in water consumption are possible health signals; monitor them.",
+    "Regular dental care (brushing and check-ups) supports overall health.",
+    "Perform grooming routines like brushing and nail trimming with positive reinforcement.",
+    "Use parasite preventives year-round, not seasonally."
+  ],
+  blog_extra_final: "Consistency and short, enjoyable repetitions give the best results in behavior training. Reward-based methods instead of punishment reduce anxiety, accelerate learning, and strengthen the bond of trust. Every pet is unique; therefore, customize your plans according to age, breed, and health status.",
+  
+  // Gallery
+  gallery_title: "Our Photo Gallery",
+  gallery_subtitle: "Highlights from our clinic, happy patients, and community moments.",
+  
+  // About Us
+  about_title: "Our Community-Focused Team",
+  about_meet_vets: "Meet Our Vets",
+  about_mission_title: "Our Mission",
+  about_mission_content: "At PetCare Clinic, our mission is to provide exceptional veterinary care with compassion and integrity. We are dedicated to the health and well-being of your pets, offering a wide range of services from routine check-ups to advanced treatments. Our team of experienced professionals is committed to creating a welcoming and supportive environment for both pets and their owners. We believe in building lasting relationships with our clients, based on trust and mutual respect. Your pet's health is our top priority, and we strive to deliver the highest standard of care in every aspect of our practice.",
+  about_community_title: "Our Community Initiatives",
+  about_testimonials_title: "Client Testimonials",
+  
+  // Veterinarians
+  about_vet1_name: "Dr. Amelia Harper",
+  about_vet1_desc: "Born and raised in this community, Dr. Harper is passionate about feline health and often volunteers at local cat adoption events.",
+  about_vet2_name: "Dr. Ethan Carter",
+  about_vet2_desc: "A lifelong dog owner and resident, Dr. Carter specializes in canine surgery and leads our annual 'Paws in the Park' charity walk.",
+  about_vet3_name: "Dr. Olivia Bennett",
+  about_vet3_desc: "Dr. Bennett is an active member of the local wildlife rescue, focusing on exotic animal care and rehabilitation for our neighborhood's unique fauna.",
+  about_vet4_name: "Dr. Noah Thompson",
+  about_vet4_desc: "Having grown up just a few blocks from the clinic, Dr. Thompson is our general practice vet, committed to providing accessible and friendly care to all neighborhood pets.",
+  
+  // Community Initiatives
+  about_initiative1_title: "Annual Pet Fair & Health Checks",
+  about_initiative1_desc: "Every summer, we host a free pet fair offering complimentary health screenings, microchipping, and educational workshops for local pet owners.",
+  about_initiative1_link: "See event photos",
+  about_initiative2_title: "Partnerships with Local Shelters",
+  about_initiative2_desc: "We proudly partner with \"Happy Tails Shelter\" and \"Paws & Claws Rescue,\" providing discounted veterinary services and supporting adoption drives.",
+  about_initiative2_link: "Learn about our partners",
+  about_initiative3_title: "Volunteer & Education Programs",
+  about_initiative3_desc: "Join us for community clean-up days, pet safety workshops, or assist at our local animal welfare events. Your help makes a difference!",
+  about_initiative3_link: "Volunteer with us",
+  
+  // Testimonials
+  about_testimonial1_name: "Sophia Clark",
+  about_testimonial1_time: "2 months ago",
+  about_testimonial1_content: "\"I've been bringing my cat, Whiskers, to PetCare Clinic for years, and I've always been impressed with the level of care and attention they provide. Dr. Harper is incredibly knowledgeable and compassionate, and the entire staff is friendly and helpful. I highly recommend them!\"",
+  about_testimonial2_name: "Liam Evans",
+  about_testimonial2_time: "3 months ago",
+  about_testimonial2_content: "\"My dog, Buddy, had to have surgery recently, and I was so nervous. Dr. Carter and the team at PetCare Clinic were amazing. They kept me informed every step of the way, and Buddy recovered quickly. I'm so grateful for their expertise and care.\"",
+  about_testimonial3_name: "Isabella Green",
+  about_testimonial3_time: "4 months ago",
+  about_testimonial3_content: "\"Dr. Bennett is the only vet I trust with my exotic pets. She's incredibly knowledgeable about their unique needs and always provides excellent care. The clinic is clean, well-equipped, and the staff is always welcoming. I wouldn't take my pets anywhere else.\"",
+  
+  // Contact
+  contact_title: "Contact",
+  contact_subtitle: "Get in touch with us for your questions or to book an appointment.",
+  
+  // Contact Form
+  contact_form_title: "Quick Appointment Dashboard",
+  contact_pet_type: "Select Pet Type",
+  contact_pet_dog: "Dog",
+  contact_pet_cat: "Cat",
+  contact_pet_bird: "Bird",
+  contact_pet_rabbit: "Rabbit",
+  contact_pet_other: "Other",
+  contact_pet_name: "Pet's Name",
+  contact_pet_name_placeholder: "Fido",
+  contact_species: "Species",
+  contact_species_placeholder: "Dog",
+  contact_breed: "Breed",
+  contact_breed_placeholder: "Golden Retriever",
+  contact_owner_info: "Owner Information",
+  contact_owner_name: "Your Name",
+  contact_owner_name_placeholder: "Jane Doe",
+  contact_email: "Email",
+  contact_email_placeholder: "jane.doe@example.com",
+  contact_phone: "Phone Number",
+  contact_phone_placeholder: "(555) 123-4567",
+  contact_appointment_details: "Appointment Details",
+  contact_service: "Service",
+  contact_select_service: "Select service",
+  contact_routine_checkup: "Routine Check-up",
+  contact_vaccination: "Vaccination",
+  contact_grooming: "Grooming",
+  contact_emergency: "Emergency",
+  contact_preferred_datetime: "Preferred Date & Time",
+  contact_available_slots: "Available Slots (Mon, Oct 4)",
+  contact_next_available: "Next Available Slot: Tue, Oct 5, 9:00 AM",
+  contact_additional_notes: "Additional Notes",
+  contact_notes_placeholder: "Any specific concerns or requests?",
+  contact_confirm_appointment: "Confirm Quick Appointment",
+  contact_immediate_assistance: "For immediate assistance, please call us at",
 }
 
 
