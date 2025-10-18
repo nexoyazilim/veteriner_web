@@ -14,6 +14,7 @@ export default {
   
   // Services
   services_title: "Our Services",
+  services_subtitle: "We provide comprehensive veterinary services for your pet's health and happiness.",
   services_comprehensive_title: "Comprehensive Veterinary Services",
   services_comprehensive_subtitle: "From routine check-ups to specialized treatments, we offer a wide range of services to keep your pet healthy and happy.",
   services_search_placeholder: "Search services...",
@@ -115,8 +116,8 @@ export default {
   team_emily_desc: "Lead Veterinarian with over 15 years of experience in small animal care.",
   team_david_name: "Dr. David Lee",
   team_david_desc: "Specialist in feline medicine and surgery.",
-  team_sarah_name: "Sarah Johnson",
-  team_sarah_desc: "Certified Veterinary Technician with a passion for animal welfare.",
+  team_sarah_name: "Mike Johnson",
+  team_mike_desc: "Certified Veterinary Technician with a passion for animal welfare.",
   
   // Footer
   footer_tagline: "Your Pet's Health Partner",
