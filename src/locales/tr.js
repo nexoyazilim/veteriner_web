@@ -14,6 +14,7 @@ export default {
   
   // Services
   services_title: "Hizmetlerimiz",
+  services_subtitle: "Evcil hayvanınızın sağlığı ve mutluluğu için kapsamlı veteriner hizmetleri sunuyoruz.",
   services_comprehensive_title: "Kapsamlı Veteriner Hizmetleri",
   services_comprehensive_subtitle: "Rutin kontrollerden özel tedavilere kadar, evcil hayvanınızın sağlıklı ve mutlu kalması için geniş bir hizmet yelpazesi sunuyoruz.",
   services_search_placeholder: "Hizmet ara...",
@@ -115,8 +116,8 @@ export default {
   team_emily_desc: "Küçük hayvan bakımında 15 yıldan fazla deneyime sahip baş veteriner hekim.",
   team_david_name: "Dr. David Lee",
   team_david_desc: "Kedi tıbbı ve cerrahisi uzmanı.",
-  team_sarah_name: "Sarah Johnson",
-  team_sarah_desc: "Hayvan refahına tutkuyla bağlı sertifikalı veteriner teknisyeni.",
+  team_sarah_name: "Mike Johnson",
+  team_mike_desc: "Hayvan refahına tutkuyla bağlı sertifikalı veteriner teknisyeni.",
   
   // Footer
   footer_tagline: "Evcil Hayvanınızın Sağlık Ortağı",

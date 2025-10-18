@@ -119,7 +119,7 @@ export default function Home() {
                   <img alt={t('team_sarah_name')} className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXeZPs6uw4fu3chxND4l6Qcu0t0Il4rdJYPtvQkXD7Zb4wouprnlRRpgY9N-V5jT1ntmIudiSFP74c2u-WRtwdRliWEdMpdKKLkg8d8F910g3pCWFSdHXAZr2b1SjDtcXtXveaRPvRq1d-N05XoBn7a8DFOQBEI6cDpwFaxVKmhMaEHGMH8wQ26lvKnfUmXnGSC6KcJguGGtaH42EWGsJoKIL3HhpPG4YH-NHCpBjWe6316d9cgXk7t8RWKUTDbbrSUMkR9A1KHaU" loading="lazy" />
                 </div>
                 <h3 className="text-xl font-bold">{t('team_sarah_name')}</h3>
-                <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('team_sarah_desc')}</p>
+                <p className="text-foreground-muted-light dark:text-foreground-muted-dark">{t('team_mike_desc')}</p>
               </div>
             </div>
           </div>
